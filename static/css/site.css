@@ -1253,7 +1253,7 @@ a.desc:after {
 }
 .top_bottom{
     margin-bottom: 30px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 .login_btn{
 	background-color: #25B9AB;
@@ -1347,6 +1347,7 @@ a.desc:after {
 .hbsidenav {
     /* overflow: hidden; */
   height: 100vh;
+  width: 100%;
   width: 0;
   position: fixed;
   z-index: 1;
