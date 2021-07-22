@@ -203,6 +203,7 @@ a.desc:after {
     height: 3px;
     border: none;
     border-top: 3px double white;
+    opacity: 0;
 }
 
 .bottom_footer {
@@ -1582,13 +1583,13 @@ a.desc:after {
 }
 .view_buy_ba{
     background-color: #464444;
-    border-bottom: 2px solid #ff7575;
+    border-bottom: 2px solid #fcc12d;
     color: blanchedalmond;
 }
 .view_buy_btn{
     position: absolute;
     right: 6px;
-    background-color: coral;
+    background-color: #e64a19;
     padding: 6px 14px;
     border-radius: 12px;
     margin-top: -53px;
@@ -1607,7 +1608,7 @@ a.desc:after {
     position: absolute;
     margin-top: -56px;
     left: 192px;
-    background-color: #D83C4E;
+    background-color: #ff0000;
 }
 @media(max-width:354px){
     .view_buy_discount{
@@ -2111,7 +2112,7 @@ display:inline-block;
 }
 .viewers_count{
     background-color: #fff;
-    color: #2EC4B6;
+    color: #2ec4b6;
     padding: 0 4px;
     font-size: 0.8rem;
     margin: auto 0;
