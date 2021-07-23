@@ -1800,7 +1800,7 @@ display:inline-block;
 .line_text{
 	    z-index: 1;
     font-size: 1.5rem;
-    background: linear-gradient(to bottom , #f886a58f,var(--pink));
+    background: linear-gradient(to bottom , #2EC4B6, #b6e4df);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
