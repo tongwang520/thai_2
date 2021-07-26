@@ -2466,7 +2466,7 @@ fieldset:disabled a.btn {
   border-color: #545b62;
 }
 .btn-secondary:focus,
-.btn-secondary.focus {
+.btn-secondary.focus {jump16931
   color: #fff;
   background-color: #5a6268;
   border-color: #545b62;
@@ -2491,14 +2491,14 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
 }
 .btn-success {
-    color: #2ec4b6;
-    background-color: white;
-    border-color: white;
+    color: white;
+    background-color: #e64a19;
+    /* border-color: white; */
 }
 .btn-success:hover {
   color: #fff;
-  background-color: #218838;
-  border-color: #1e7e34;
+  /* background-color: #218838; */
+  /* border-color: #1e7e34; */
 }
 .btn-success:focus,
 .btn-success.focus {
@@ -2562,13 +2562,13 @@ fieldset:disabled a.btn {
 }
 .btn-warning {
     color: #212529;
-    background-color: #ffc107;
-    border-color: #ffc107;
+    background-color: #c6c6c6;
+    border-color: #c6c6c6;
 }
 .btn-warning:hover {
   color: #212529;
-  background-color: #e0a800;
-  border-color: #d39e00;
+  background-color: #2ec4b6;
+  /* border-color: #2ec4b6; */
 }
 .btn-warning:focus,
 .btn-warning.focus {
@@ -5411,7 +5411,7 @@ a.badge-dark.focus {
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1;
-  color: white;
+  color: #666;
   text-shadow: 0 1px 0 #fff;
   opacity: 0.5;
 }
@@ -5479,6 +5479,149 @@ a.close.disabled {
   overflow-x: hidden;
   overflow-y: auto;
 }
+
+/* 未登录的时候点击收藏按钮的弹窗的css
+已登录时点击升级为Full HD按钮的弹窗控制css */
+.mengchen{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    z-index: 9999;
+    display: none;
+}
+.mengchen01{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    z-index: 9999;
+    display: none;
+}
+.window_box{
+  position: fixed;
+  top: 38%;
+  right: 50%;
+  width:19rem;
+  height: 10rem;
+  background-color: white;
+  border-radius: 5px;
+}
+.window_note{
+    background-color: #2ec4b6;
+    height: 2rem;
+    line-height: 2rem;
+}
+.window_note span:first-child{
+    margin-left: 1rem;
+}
+.window_note span:nth-child(2){
+    font-size: 1.2rem;
+    position: absolute;
+    right: 1rem;
+    top: -.2rem;
+    cursor: pointer;
+}
+.window_text{
+    height: 4rem;
+    color: black;
+    line-height: 4rem;
+    text-align: center;
+}
+.window_xian{
+    width: 90%;
+    border-bottom: 1px solid #d2d2d2;
+    margin: 0 auto;
+}
+.window_bottom{
+    cursor: pointer;
+}
+.window_bottom button:first-child{
+    position: absolute;
+    right: 7rem;
+    width: 5rem;
+    height: 2.5rem;
+    top: 7rem;
+    border: 0;
+    border-radius: 5px;
+    background: #fcc12d;
+    outline: none;
+}
+.window_bottom button:nth-child(2){
+    position: absolute;
+    right: 2rem;
+    top: 7rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    border: 0;
+    background: #40a73f;
+    color: white;
+    outline: none;
+}
+#window_big{
+    width: 7rem;
+}
+
+/* 已登录时点击收藏按钮的弹窗的css */
+.mengchen02{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    z-index: 9999;
+    /* display: none; */
+}
+.mengchen02 .window_box{
+    position: fixed;
+    top: 38%;
+    right: 41%;
+    width:37rem;
+    height: 14rem;
+    background-color: pink;
+    border-radius: 5px;
+  }
+  .mengchen02 .window_note{
+    background-color: #2ec4b6;
+    height: 2.5rem;
+    line-height: 2.5rem;
+}
+.mengchen02 .window_note button{
+    background: red;
+    border-radius: 5px;
+    width: 3rem;
+    height: 2rem;
+    position: absolute;
+    right: 1rem;
+    color: white;
+    top: 0.2rem;
+    line-height: 1rem;
+    outline: none;
+    border: none;
+}
+.window_favor{
+    margin-top: 1.5rem;
+    color: black;
+    margin-left: 1rem;
+}
+.window_favor label{
+    background: white;
+    line-height: 2rem;
+}
+.window_favor input{
+    width: 1rem;
+    height: 1rem;
+}
+
+
 .modal {
   position: fixed;
   top: 0;
@@ -7433,13 +7576,13 @@ button.bg-dark:focus {
   width: 25% !important;
 }
 .w-50 {
-  width: 50% !important;
+  width: 40% !important;
 }
 .w-75 {
   width: 75% !important;
 }
 .w-100 {
-  width: 100% !important;
+  width: 80% !important;
 }
 .w-auto {
   width: auto !important;

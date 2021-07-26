@@ -1142,7 +1142,7 @@
 				<div class="row">
 					<div class="col-12 col-md-6 text-center mt-2 p-0 m-0" style="white-space: nowrap;">
 						<button type="button"
-							class="btn btn-outline-light favorite-video mb-1 btn_f_hd Film-footer-Button"><i
+							class="btn btn-outline-light favorite-video mb-1 btn_f_hd Film-footer-Button" id="unlogin_collect"><i
 								class="fas fa-heart pr-1" style="color:red"></i>รายการโปรด</button>
 						<button type="button"
 							class="btn btn-outline-light mx-1 favorite-actor mb-1 btn_f_hd Film-footer-Button"> <img
@@ -2419,7 +2419,7 @@
 		aria-labelledby="common-modal-label">
 		<div class="modal-dialog modal-sm modal-dialog-centered" role="document">
 			<div class="modal-content">
-				<div class="modal-header" style="background: pink; font-weight:bold; font-size:20px">
+				<div class="modal-header" style="background: #2ec4b6; font-weight:bold; font-size:20px">
 					<h5 id="common-modal-label" class="modal-title">NOTE</h5>
 					<button type="button" class="close" data-dismiss="modal"><span
 							aria-hidden="true">&times;</span></button>
@@ -2447,6 +2447,52 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- 未登录时点击收藏按钮的弹窗的html -->
+	<div class="mengchen">
+		<div class="window_box">
+			<div class="window_note">
+				<span>NOTE</span>
+				<span id="window_close">x</span>
+			</div>
+			<div class="window_text">โปรดเข้าสู่ระบบเพื่อดำเนินการต่อ</div>
+			<div class="window_xian"></div>
+			<div class="window_bottom">
+				<button>Login</button>
+				<button>Signup</button>
+			</div>
+		</div>
+	</div>
+	
+	<!-- 已登录时点击收藏按钮的弹窗的html -->
+	<div class="mengchen02">
+		<div class="window_box">
+			<div class="window_note">
+				<span>หนังโปรด</span>
+				<button>save</button>
+			</div>
+			<div class="window_favor">
+				<input type="checkbox" value="markcheckbox1" id="markcheckbox1">
+				<label class="mark" for="markcheckbox1">Favorites</label>
+			</div>
+			<div class="window_upgrade">สมาชิกทั่วไปไม่สามารถสร้างเพลย์ลิสต์ได้ กรุณาอัพเกรดเป็นสมาชิก VIP Upgrade to VIP</div>
+		</div>
+	</div>
+	<!-- 已登录时点击升级为Full HD按钮的弹窗html -->
+	<div class="mengchen01">
+		<div class="window_box">
+			<div class="window_note">
+				<span>เปลี่ยนเป็น Full HD</span>
+				<span id="window_close01">x</span>
+			</div>
+			<div class="window_text">โปรดอัพเกรด VIP</div>
+			<div class="window_xian"></div>
+			<div class="window_bottom">
+				<button id="window_big">Upgrade VIP</button>
+				<button>Close</button>
+			</div>
+		</div>
+	</div>
 	<script data-cfasync="false" src="static/js/email-decode.min.js"></script>
 	<script src="static/js/jquery.js"></script>
 	<script src="static/js/yii.js"></script>
@@ -2457,6 +2503,16 @@
 	<script src="static/js/clappr.min.js"></script>
 	<script src="static/js/addthis_widget.js"></script>
 	<script>jQuery(function ($) {
+		// 未登录时点击收藏的弹窗控制js
+			$("#window_close").click(function(){
+				$(".mengchen").hide()
+			})
+
+			// 已登录时点击升级为Full HD按钮的弹窗控制js
+			$("#window_close01").click(function(){
+				$(".mengchen01").hide()
+			})
+
 			$(document).ready(function () {
 				// $(function() {
 				//     $( '#video_v1' ).draggable({ distance: 20 });
@@ -3301,8 +3357,8 @@
 							footer += '<button type="button" class="btn btn-secondary" data-value="N">Close</button>';
 							break;
 						default:
-							footer += '<button type="button" class="btn btn-warning" data-value="/login">Login</button>';
-							footer += '<button type="button" class="btn btn-success" data-value="/signup">Signup</button>';
+							footer += '<button type="button" class="btn btn-warning" data-value="/login" style="width:130px;background:#fcc12d">Login</button>';
+							footer += '<button type="button" class="btn btn-success" data-value="/signup" style="background:#c6c6c6">Signup</button>';
 							break;
 					}
 					$('#common-modal .modal-header .modal-title').html($(this).data("title"));
