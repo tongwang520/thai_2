@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<script>(function (w, d, s, l, i) {
+			w[l] = w[l] || []; w[l].push({
+				'gtm.start':
+					new Date().getTime(), event: 'gtm.js'
+			}); var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-P68MGRZ');</script>
+
+	<title></title>
+	<link href="static/css/bootstrap.css" rel="stylesheet">
+	<link href="static/css/all.min.css" rel="stylesheet">
+	<link href="static/css/site.css" rel="stylesheet">
+	<link href="static/css/slick.css" rel="stylesheet">
+	<link href="static/css/slick-theme.css" rel="stylesheet">
+	<link href="static/css/font-awesome.min.css" rel="stylesheet">
+	<link href="static/css/flag-icon.min.css" rel="stylesheet">
+	<style>
+		.carousel-item {
+			height: 32rem;
+		}
+	</style>
+
+</head>
+
+<body class="d-flex flex-column h-100">
+
+	<main role="main" data-nosnippet="">
+		<style>
+			.bg {
+				width: 100%;
+				height: 100%;
+				position: fixed;
+				left: 0;
+				right: 0;
+				z-index: 1;
+				display: block;
+				background-image: url("//rs.aoxx69.net/image/member/sexbaby01.jpg");
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: top;
+				filter: blur(10px);
+				opacity: 0.6;
+			}
+			.member_set_text {
+				color: #fff;
+				background-color: #000;
+				border-radius: 7px;
+			}
+
+			.member_set_text:hover {
+				color: #fff;
+			}
+
+			.member_set_text.active {
+				color: #fff;
+				background-color: #2ec4b6;
+			}
+			.member_set_text .fas {
+				display: block;
+				float: left;
+				width: 17px;
+				height: 20px;
+				margin-right: 0.5rem;
+				margin-top: 0.2rem;
+			}
+			.member_set_text .fa-user_new {
+				background: url(./static/icon/member_g.png) no-repeat;
+				background-size: 100%;
+			}
+			.member_set_text.active .fa-user_new {
+				background: url(./static/icon/member_b.png) no-repeat;
+				background-size: 100%;
+			}
+			.member_set_text .fa-history_new {
+				background: url(./static/icon/consumption_y.png) no-repeat;
+				background-size: 100%;
+			}
+			.tab-content .fa-user_new{
+				display: block;
+				float: left;
+				width: 23px;
+				height: 34px;
+				margin-right: 0.5rem;
+				background: url(./static/icon/member_b.png) no-repeat;
+				background-size: 100%;
+			}
+			.member_set_text.active .fa-history_new {
+				background: url(./static/icon/consumption_b.png) no-repeat;
+				background-size: 100%;
+			}
+			.member_detail_text {
+				color: #cacaca;
+				font-size: 14px;
+			}
+
+			.member_info_text {
+				color: #fff;
+				font-size: 14px;
+			}
+
+			.mobwidth {
+				display: inline;
+
+			}
+
+			@media(max-width:992px) {
+				.mobwidth {
+					display: flex;
+				}
+
+				.member_set_text.active {
+					color: #fff;
+					background-color: #212121;
+					border-radius: 0px;
+					border-bottom: solid 1.6px #f1d827;
+				}
+			}
+
+			@media(max-width:400px) {
+
+				.table th,
+				.table td {
+					padding: 3px;
+					vertical-align: top;
+					border-top: 1px solid #dee2e6;
+					font-size: 0.6rem;
+					word-break: keep-all;
+				}
+			}
+		</style>
+		<div class="member-info-index">
+			<div class="topbox"></div>
+
+			<div class="container mt-3" style="z-insex:3;min;min-height: 82vh;">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<ul class="nav mobwidth" id="myTab" role="tablist">
+							<li class="nav-item mt-2">
+								<a class="nav-link member_set_text active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+									aria-controls="home" aria-selected="true">
+									<i class="fas fa-user_new pr-2"></i>會員 </a>
+							</li>
+							<li class="nav-item mt-2">
+								<a class="nav-link member_set_text" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+									aria-controls="profile" aria-selected="false">
+									<i class="fas fa-history_new pr-2"></i>消費記錄 </a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-9 col-md-12" style="background-color: #000;">
+						<div class="tab-content" id="myTabContent">
+							<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+								<p class="h4 mt-3 d-flex justify-content-center">
+									<i class="fas fa-user_new pr-2"></i>
+									會員
+								</p>
+								<p class="member_detail_text">你可以於此確認會員資訊</p>
+								<div class="row">
+									<div class="col-4  member_detail_text">
+										<p style="white-space: nowrap;">會員帳號</p>
+										<p style="white-space: nowrap;">會員等級</p>
+										<p class="mt-4">到期日期</p>
+										<p>剩餘天數</p>
+									</div>
+									<div class="col-8  member_info_text">
+										<p class="">xxxxxx</p>
+										<p>
+											一般會員<a href="#"><button
+													type="button" class="btn-sm btn btn-warning btn-sm ml-2">升級VIP
+												</button></a> </p>
+										<p>
+											none </p>
+										<p>
+											none </p>
+									</div>
+								</div>
+								<div class="row mt-5">
+									<div class="col-4  member_detail_text">
+										<p>您的信箱</p>
+									</div>
+									<div class="col-8  member_info_text">
+										<p>a43468798@gmail.com</p>
+									</div>
+								</div>
+								<div class="member_hr my-4"></div>
+								<p class="h4 mt-3 d-flex justify-content-center">修改密碼</p>
+								<form id="update-password">
+									<div class="row mt-3">
+										<div class="col-12 input-group-sm">
+											<h6>新密碼</h6>
+											<input type="password" id="password" name="password"
+												class="form-control mb-1" maxlength="15" required="" autocomplete="off"
+												placeholder="需含英數6-15碼">
+											<h6>密碼確認</h6>
+											<input type="password" id="password_repeat" name="password_repeat"
+												class="form-control mb-1" maxlength="15" required="" autocomplete="off"
+												placeholder="需含英數6-15碼">
+										</div>
+									</div>
+									<div class="d-flex justify-content-center">
+										<button type="submit" class="btn btn-submit mb-3 mt-2">寄出</button>
+									</div>
+								</form>
+							</div>
+							<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+								<div class="tab-content" id="myTabContent">
+									<div class="tab-pane fade show active" id="home" role="tabpanel"
+										aria-labelledby="home-tab">
+										<p class="h4 mt-3 d-flex justify-content-center">交易記錄</p>
+										<p class="member_detail_text">Transaction history list</p>
+										<div class="member_hr mb-3"></div>
+										<table class="table table-striped table-dark">
+											<thead>
+												<tr>
+													<th scope="col">購買時間</th>
+													<th scope="col">訂單號</th>
+													<th scope="col">訂單金額</th>
+													<th scope="col">狀態</th>
+												</tr>
+											</thead>
+											<tbody></tbody>
+										</table>
+										<div class="member_hr mb-4"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-pane fade" id="referral" role="tabpanel" aria-labelledby="referral-tab">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<script>
+					/*宣告 js 要用的變數，來裝 php 的值*/
+					var _title_Email = '被推薦人Email';
+					var _title_RegistTime = '註冊時間';
+				</script>
+
+
+			</div>
+		</div>
+	</main>
+	
+	<script data-cfasync="false" src="static/js/email-decode.min.js"></script>
+	<script src="static/js/jquery.js"></script>
+	<script src="static/js/yii.js"></script>
+	<script src="static/js/bootstrap.bundle.js"></script>
+	<script src="static/js/lozad.min.js"></script>
+	<script src="static/js/custom_cookie.js"></script>
+	<script>jQuery(function ($) {
+			$(document).ready(function () {
+				$("#update-password").submit(function (event) {
+					$.ajax({
+						url: '/member/member-info/update-password',
+						dataType: "json",
+						type: "post",
+						data: $(this).serialize(),
+						success: function (data) {
+							if (data.code == 0) {
+								alert('Change password complete, Please login again.');
+								window.location.href = "/login";
+							} else {
+								alert(data.message);
+							}
+						}
+					});
+					//alert( "Handler for .submit() called." );
+					//event.preventDefault();
+					return false;
+				});
+
+				//copy 推薦連結 click event
+				$('#copy_refereeLink_btn').click(function (e) {
+					e.preventDefault();
+					var copyText = $('#refereeLink_url').attr('href');
+
+					document.addEventListener('copy', function (e) {
+						e.clipboardData.setData('text/plain', copyText);
+						e.preventDefault();
+					}, true);
+
+					document.execCommand('copy');
+					//console.log('copied text : ', copyText);
+					alert('copied!');
+				});
+
+				/*按下數量後，顯示詳細清單*/
+				$(document).on('click', '#view-link', function () {
+					_sdate = $(this).closest('tr').data('str_date');
+					// alert (_sdate);
+					show_refereeList(_sdate);
+					return false;
+				});
+
+				/*按下數量後，向server要詳細清單，並顯示*/
+				function show_refereeList(_date) {
+					$.ajax({
+						url: 'member-info/get-referee-list',
+						data: { str_date: _date },
+						type: "post",
+
+						success: function (result) {
+							var response = JSON.parse(result);
+							if (response.code != 999) {
+								$('#common-modal .modal-title').html('error');
+								$('#common-modal .modal-body').html(response.message);
+								$('#common-modal .modal-footer').show();
+								$('#common-modal').modal({ show: true });
+								return false;
+							}
+							var content = '';
+
+							if (response.result.dataSum.sum_records > 0) {
+								var referee_data = response.result.dataRows;
+								content += '<div>';
+								content += '<div class="control-group">';
+								content += '<div class="promotion_info" style="display: inline">';
+								content += '<table class="table table-striped table-dark">';
+								content += '<thead>';
+								content += '<tr>';
+								content += '<td>' + _title_Email + '</td>';
+								content += '<td>' + _title_RegistTime + '</td>';
+								content += '</tr>';
+								content += '</thead>';
+								content += '<tbody>';
+
+								for (var i = 0; i < referee_data.length; i++) {
+									content += '<tr data-str_email="' + referee_data[i].referral_Email + '">';
+									content += '<td>' + referee_data[i].referral_Email + '</td>';
+									content += '<td>' + referee_data[i].regist_Time + '</td>';
+									content += '</tr>';
+								}
+
+								content += '</tbody>';
+								content += '</table>';
+								content += '</div>';
+								content += '</div>';
+								content += '</div>';
+
+							} else {
+								content = '<div>No Referee List</div>';
+							}
+							$('#common-modal .modal-title').html(result.code);
+							$('#common-modal .modal-body').html(content);
+							$('#common-modal .modal-footer').show();
+							$('#common-modal').modal({ show: true });
+						},
+						error: function (XMLHttpRequest, textStatus, errorThrown) {
+							//alert(XMLHttpRequest.status); // http status code (1xx/2xx/3xx/4xx/5xx...etc)
+							//alert(XMLHttpRequest.readyState); // (0=初始化，1=載入，2=載入完成，3=解析，4=完成)
+							//alert(textStatus); //error
+							$('#common-modal .modal-title').html(XMLHttpRequest.status);
+							$('#common-modal .modal-body').html(textStatus);
+							$('#common-modal .modal-footer').show();
+							$('#common-modal').modal({ show: true });
+						},
+
+					});
+				}
+
+
+			});
+			$(document).ready(function () {
+
+				$('.btn_right').on('click', function () {
+					$('.btn_right').addClass('d-none');
+					$('.btn_left').removeClass('d-none');
+				});
+				$('.btn_left').on('click', function () {
+					$('.btn_left').addClass('d-none');
+					$('.btn_right').removeClass('d-none');
+				});
+
+
+				$(document).on('click', '.item_menu', function () {
+					var menu_id = $(this).data("alias");
+					//window.target = "video-play";
+					window.location.href = encodeURI("/" + menu_id);
+				});
+
+
+				var videoObserver = lozad('.lozad-tg', {
+					threshold: 0.1,
+					load: function (element) {
+						if (element.getAttribute('data-src')) {
+							element.src = element.getAttribute("data-src");
+						}
+
+						//if (e1.getAttribute('data-src')) {
+						//    e1.src = e1.getAttribute('data-src');
+						//}
+						element.onload = function () {
+							//toastr["success"](el.localName.toUpperCase() + " " + el.getAttribute("data-index") + " lazy loaded.")
+							//console.log(el.localName.toUpperCase() + " " + el.getAttribute("data-index") + " lazy loaded.");
+						}
+					}
+				});
+				videoObserver.observe();
+			});
+
+
+			jQuery('#ageAuthentication-modal').modal({ "show": false });
+			jQuery('#favorite-modal').modal({ "show": false });
+			jQuery('#common-modal').modal({ "show": false });
+			jQuery('#gift-modal').modal({ "show": false });
+			$(document).ready(function () {
+				//if(!sessionStorage.getItem('ageAuthentication')){
+				$(window).scroll(function () {
+					if (!getCookie('ageAuthentication')) {
+						var scrollVal = $(this).scrollTop();
+						// console.log(scrollVal)
+						if (scrollVal >= 800) {
+							$('#ageAuthentication-modal').modal('show');
+						}
+					}
+				});
+				// 判斷會員時間剩下三天
+				if (!getCookie('member_last_time')) {
+					$('#member_last_time').modal('show');
+				}
+				$(document).on('click', '.last_time', function () {
+					//sessionStorage.setItem('taost_con', true);
+					setCookie('member_last_time', true);
+				});
+
+				$(document).on('click', '#ageAuthentication-modal .modal-footer .btn', function () {
+					if ($(this).data("value") == 'N') {
+						window.location.href = '//google.com.tw';
+					} else {
+						//sessionStorage.setItem('ageAuthentication', true);
+						var d = new Date();
+						var old_date = new Date("2021,02,05");
+						var new_date = new Date("2021,02,14");
+						if (d >= old_date && d <= new_date) {
+							// var show_time = 3;
+							setCookie('ageAuthentication', true, 3);
+
+						} else {
+							// var show_time = 12;
+							setCookie('ageAuthentication', true);
+						}
+						// setCookie('ageAuthentication', true);
+						$('#ageAuthentication-modal').modal('hide');
+					}
+				});
+
+				//addicon 判斷cookie 一天到後才出現增加桌面 取得cookie的方式
+				// if(!getCookie('addicon')){
+				//     $('#icon_note').removeClass('d-none');
+				// }
+				// $(document).on('click', '.lgurmG ,.lgurmG_top', function(){
+				// 		setCookie('addicon', true);
+				//         $('#icon_note').addClass('d-none');
+				// });
+
+				$(document).on('pjax:success', function () {
+					//$("html, body").animate({ scrollTop: $("#gridview-id").position().top }, 300);
+					$("html,body").animate({ "scrollTop": top })
+				});
+
+				var js_prometion_title = 'VIP優惠折扣';
+				var js_prometion_end = '你的優惠已結束';
+				var js_prometion_name = '恭禧你獲得專屬優惠';
+				var time_day = new Date()
+				var end = time_day.getTime() + 300000;
+				var _second = 1000;
+				var _minute = _second * 60;
+				var _hour = _minute * 60;
+				// var _day = _hour *24;
+				var timer;
+
+				function showRemaining() {
+					var now = new Date();
+					var distance = end - now;
+					// console.log(distance)
+					if (distance < 0) {
+						$(".time_show").html('<div class="text-danger h4">' + js_prometion_end + '</div>');
+						$('.url_none').addClass('d-none');
+						$('.del_price').attr('style', 'text-decoration: line-through;');
+						clearInterval(timer);// time stop
+					}
+					var minutes = Math.floor((distance % _hour) / _minute);
+					var seconds = Math.floor((distance % _minute) / _second);
+					var milliseconds = distance % _second;
+					$('.timer').html('<span class="text-danger mr-1">Flash Sale</span>' + '<div class="countdown">' + minutes + '</div>' + 'm ' + '<div class="countdown">' + seconds + '</div>' + 's ' + '<div class="first_text">' + milliseconds + '</div>' + 'ms');
+
+				}
+				timer = setInterval(showRemaining, 1);
+				function show_promotion() {
+					$.ajax({
+						url: '/payment/pay-promotion/get-promotion-list',
+						type: "post",
+						success: function (result) {
+							if (result.code != 0) {
+								show_note(result.message);
+								return false;
+							}
+							var content = '';
+							if (result.data.length > 0) {
+								// console.log('xx');
+								var promotion_data = JSON.parse(JSON.stringify(result.data));
+								content += '<div>';
+								for (var i = 0; i < promotion_data.length; i++) {
+									content += '<div class="control-group">';
+									content += '<div class="promotion_info" style="display: inline">';
+									content += '<div class="text-center h3">' + js_prometion_name + '</div>';
+									content += '<div class="gift_msg">';
+									var content_A = JSON.parse(promotion_data[i].content);
+									// console.log(content_A);
+									var paypromotion_A = promotion_data[i].payPromotionA;
+									// console.log(pay_Type);
+									content += '<div class="text-center h4">' + js_prometion_title + '<span class="mr-1 gift_discount">-' + content_A.discount + '</span></div>';
+									content += '<div class="text-center time_show">';
+									content += '<div class="timer d-flex justify-content-center mt-2"></div>';
+									content += '</div>';
+									content += '<div class="d-flex justify-content-center del_price">';
+									content += '<span class="gift_s_price" style="color: #945b21;">TH฿</span><div style="font-size: 2.6rem;color: #945b21;">' + content_A.price + '</div>';
+									content += '<div class="gift_o_price"><del>TH฿' + content_A.origin_price + '</del></div>';
+									content += '</div>';
+									var img_url_js = '//rs.aoxx69.net/';
+									content += '<div>';
+									for (var i2 = 0; i2 < paypromotion_A.length; i2++) {
+										var pay_Type = promotion_data[i].payPromotionA[i2].payType.payMethod.id;
+										var pay_Type_id = promotion_data[i].payPromotionA[i2].payType.id;
+										// console.log(pay_Type);
+										switch (pay_Type) {
+											case '1':
+												pay_icon = '<i style="font-size: 1.6rem;line-height: 1.3;color: #da7171"  class="far fa-credit-card"></i>';
+												break;
+											case '4':
+												pay_icon = '<i style="font-size: 1.6rem;line-height: 1.3;color: #377dff;"  class="fab fa-cc-paypal"></i>';
+												break;
+											case '2':
+												pay_icon = '<i style="font-size: 1.6rem;line-height: 1.3;color: #ffc107;"  class="fas fa-university"></i>';
+												break;
+											case '3':
+												pay_icon = '<i style="font-size: 1.6rem;line-height: 1.3;color: #000;"  class="fas fa-qrcode"></i>';
+												break;
+											case '5':
+												pay_icon = '<div><img style="width:35px" src="' + img_url_js + 'image/payment/turemoney.png" alt=""></div>';
+												break;
+											default:
+												pay_icon = '<i class="fas fa-money-check-alt"></i>';
+												break;
+										}
+										content += '<div class="url_none">';
+										content += '<div class="d-flex justify-content-center h4 gift_border mb-2">';
+										content += '<div class="mr-2">' + pay_icon + '</div>';
+										content += '<div class="align-self-center">' + paypromotion_A[i2].currency + ' ' + paypromotion_A[i2].amount + '<span style="font-size: 16px;color: #000;">/' + promotion_data[i].days + 'Days</span></div>';
+										content += '<a href="/payment/pay-promotion/deposit?pay_promotion_a_id=' + paypromotion_A[i2].id + '" target="_blank" class="ml-2 align-self-center">';
+										content += '<div class="btn btn-warning GTM-gift_buy" style="padding: 3px 10px;color: #f00;">Buy</div>';
+										content += '</a>';
+										content += '</div>';
+										if (pay_Type_id == 14) {
+											content += '<div class="" style="font-size: 0.6rem;color: #252525;padding: 0px 26px;">';
+											content += 'เพียงทำรายการผ่านบัตรเครดิตครั้งแรก และเพื่ออำนวยความสะดวกแก่ลูกค้า</br>';
+											content += 'ระบบจะทำการหักเงินรายเดือนแบบอัตโนมัติในราคาพิเศษนี้ในเดือนถัดไป</br>';
+											content += 'ถ้าหากต้องการยกเลิกโปรโมชั่นนี้สามารถ ติดต่อ ได้ที่ ฝ่ายบริการลูกค้า</br>';
+											content += '</div>';
+										}
+										content += '</div>';
+									}
+									// content += '<div style="border: 1px solid #f798b0;margin: 0 20px;"></div>';
+									// content += '<div class="my-2 ml-4">';
+									// 	content += '<p class="h6 m-0 my-1"><i class="fas fa-star pr-1 text-success"></i>此優惠只有一次機會</p>';
+									// 	content += '<p class="h6 m-0 my-1"><i class="fas fa-star pr-1 text-success"></i>脫離煩人的廣告</p>';
+									// 	content += '<p class="h6 m-0 my-1"><i class="fas fa-star pr-1 text-success"></i>體驗HD高畫質</p>';
+									// 	content += '<p class="h6 m-0 my-1"><i class="fas fa-star pr-1 text-success"></i>紀錄你所看過的每一部影片</p>';
+									// 	content += '<p class="h6 m-0 my-1"><i class="fas fa-star pr-1 text-success"></i>享受專屬女優們的約會</p>';
+									// 	content += '<p class="h6 m-0 my-1"><i class="fas fa-star pr-1 text-success"></i>解放高漲的慾望</p>';
+									// 	content += '<p class="h6 m-0 my-1"><i class="fas fa-star pr-1 text-success"></i>體驗各種情境(偷情,教師,人妻,學生)</p>';
+									// content += '</div>';
+									content += '</div>';
+									// content += '<label for="promotion' + promotion_data[i].id + '" class="promotion_name">' + promotion_data[i].name + '</label>&nbsp;';
+									content += '</div>';
+									content += '</div>';
+								}
+								content += '</div>';
+								$('#gift-modal .modal-title').html(result.title);
+								$('#gift-modal .modal-body').html(content);
+								$('#gift-modal .modal-footer').hide();
+								$('#gift-modal').modal({ show: true });
+							} else {
+								//content = '<div>No Promotion List</div>';
+								return false;
+							}
+						}
+					});
+				}
+
+				$('.gift_show').on('click', function () {
+					show_promotion();
+				});
+
+				if ('Y' == 'Y' && getCookie('ageAuthentication')) {
+					show_promotion();
+				}
+
+				// function setCookie(name, value, expire_hours) {
+				// 	if(expire_days != 'underfine'){
+				// 		var expire_days = 12;
+				// 	}
+				// 	d.setTime(d.getTime() + (expire_hours * 60 * 60 * 1000));
+				//     document.cookie = name + "=" + escape(value) + "; expires=" + d.toGMTString() + "; path=/";
+				//     //document.cookie = name + "=" + escape(value) + ";expires=" + d.toGMTString()
+				//     //document.cookie = "name=; expires=" + expires + '; domain=blog.longwin.com.tw; path=/';
+				// }
+
+				// function getCookie(name) {
+				//     var arg = escape(name) + "=";
+				//     var nameLen = arg.length;
+				//     var cookieLen = document.cookie.length;
+				//     var i = 0;
+				//     while (i < cookieLen) {
+				//         var j = i + nameLen;
+				//         if (document.cookie.substring(i, j) == arg) return getCookieValueByIndex(j);
+				//         i = document.cookie.indexOf(" ", i) + 1;
+				//         if (i == 0) break;
+				//     }
+				//     return null;
+				// }
+
+				// function getCookieValueByIndex(startIndex) {
+				//     var endIndex = document.cookie.indexOf(";", startIndex);
+				//     if (endIndex == -1) endIndex = document.cookie.length;
+				//     return unescape(document.cookie.substring(startIndex, endIndex));
+				// }
+				// $("#searchid").on('shown.bs.modal', function(){
+				//     $(this).find('#inputsearch').focus();
+				// });
+
+				//判斷手機裝置 彈出加入icon在桌面
+				var Sys = {};
+				var ua = navigator.userAgent.toLowerCase();
+				console.log(ua);
+				if (ua.match(/iphone/) || ua.match(/ipad/)) {
+					if (ua.match(/version\/([\d.]+).*safari/)) {
+						$('#icon_note').show();
+					}
+				}
+
+				$(document).on('click', '.logout', function () {
+					$.ajax({
+						type: "POST",
+						url: "/site/logout"
+					});
+				});
+
+				$(document).on('click', '.show-history', function () {
+
+					var _isMemberLogin = 1;
+					if (_isMemberLogin == 1) {
+						location.href = '/member/favorite?f_page=1';
+					}
+					else {
+						show_note('Please login to continue');
+					}
+				});
+
+				$(document).on('click', '.favorite-video', function () {
+					var vid = $(this).closest('.video-play-content').data('vid');
+					var type = $(this).closest('.video-play-content').data('type');
+					var avkey = $(this).closest('.video-play-content').data('avkey');
+					$.ajax({
+						url: '/member/favorite/get-category',
+						type: "get",
+						data: { model: type, id: vid, avkey: avkey },
+						success: function (result) {
+							if (result.code != 0) {
+								show_note(result.message);
+								return false;
+							}
+							var content = '';
+							if (result.data.length > 0) {
+								var category_data = JSON.parse(JSON.stringify(result.data));
+								content += '<div class="ck-box-pop text-dark" data-vid="' + vid + '" data-type="' + type + '" data-avkey="' + avkey + '">';
+								for (var i = 0; i < category_data.length; i++) {
+									content += '<div class="control-group">';
+									content += '<input type="checkbox" id="category' + category_data[i].id + '" ' + category_data[i].checked + ' class="category_checkbox" value="' + category_data[i].id + '">&nbsp;&nbsp;';
+									content += '<div class="category_info" style="display: inline">';
+									content += '<label for="category' + category_data[i].id + '" class="category_name">' + category_data[i].name + '</label>&nbsp;';
+									//content += '<span class="badge badge-light">' + category_data[i].cnt + '</span>&nbsp;';
+									if (category_data[i].editable == 'Y') {
+										content += '<span class="category_edit" style="cursor: pointer;"><i class="fas fa-edit"></i></span>';
+									}
+									content += '</div>';
+									content += '</div>';
+								}
+								content += '<div id="message" class="text-danger">&nbsp;</div>';
+								content += '</div>';
+							} else {
+								content = '<div>No Category</div>';
+							}
+							$('#favorite-modal .modal-title').html(result.title);
+							$('#favorite-modal .modal-body').html(content);
+							$('#favorite-modal .modal-footer').show();
+							$('#favorite-modal').modal({ show: true });
+						}
+					});
+				});
+
+				$(document).on('click', '.category_checkbox', function () {
+					var obj1 = $(this).closest('.control-group');
+					var obj2 = $(this).closest('.ck-box-pop');
+					var obj3 = $(this);
+					var vid = obj2.data('vid');
+					var type = obj2.data('type');
+					var avkey = obj2.data('avkey');
+
+					var spinner = '';
+					spinner += '<div class="spinner-border spinner-border-sm text-success" role="status">';
+					spinner += '<span class="sr-only">Process...</span>';
+					spinner += '</div>';
+					obj2.find('#message').html('&nbsp;');
+					obj2.find('.fa-check').remove();
+					obj1.append(spinner);
+
+					if ($(this).prop("checked")) {
+						$.ajax({
+							url: '/member/favorite/add-video',
+							dataType: "json",
+							type: "post",
+							//context: this,
+							data: { category_id: this.value, model: type, id: vid, avkey: avkey },
+							success: function (result) {
+								obj1.find('.spinner-border').remove();
+								if (result.code != 0) {
+									if (result.code == 999) {
+										var msg = result.message + ' <a href="/payment/pay-promotion">Upgrade to VIP</a>';
+									} else {
+										var msg = result.message;
+									}
+									obj3.prop("checked", false);
+									obj2.find('#message').html(msg);
+									return false;
+								}
+								obj1.append('<i class="fas fa-check text-success"></i>');
+							}
+						});
+					} else {
+						$.ajax({
+							url: '/member/favorite/del-video',
+							dataType: "json",
+							type: "post",
+							//context: this,
+							data: { category_id: this.value, model: type, id: vid, avkey: avkey },
+							success: function (result) {
+								obj1.find('.spinner-border').remove();
+								if (result.code != 0) {
+									show_note(result.message);
+									return false;
+								}
+								obj1.append('<i class="fas fa-check text-success"></i>');
+							}
+						});
+					}
+				});
+
+				$(document).on('click', '.cancel_f', function () {
+					var obj2 = $(this).closest('.data-content');
+					var category_id = obj2.data('category');
+					var vid = obj2.data('vid');
+					var type = obj2.data('type');
+					var avkey = obj2.data('avkey');
+					$.ajax({
+						url: '/member/favorite/del-video',
+						dataType: "json",
+						type: "post",
+						//context: this,
+						data: { category_id: category_id, model: type, id: vid, avkey: avkey },
+						success: function (result) {
+							obj2.fadeTo("slow", 0.01, function () {	//fade
+								obj2.slideUp("slow", function () {	//slide up
+									obj2.remove();
+								});
+							});
+						}
+					});
+				});
+
+				$(document).on('click', '.cancel_ac', function () {
+					var obj2 = $(this).closest('.data-content');
+					var name = obj2.data('name');
+					$.ajax({
+						url: '/member/favorite/del-actor',
+						dataType: "json",
+						type: "post",
+						data: { name: name },
+						success: function (result) {
+							obj2.fadeTo("slow", 0.01, function () {	//fade
+								obj2.slideUp("slow", function () {	//slide up
+									obj2.remove();
+								});
+							});
+						}
+					});
+				});
+
+				$("#favorite-modal").on("hidden.bs.modal", function () {
+					$(this).find('.modal-body').html('');
+				});
+
+				$(document).on('click', '.category_add', function () {
+					var obj2 = $(this).closest('.modal-content').find('.ck-box-pop');
+					if ($('#category_name').val() == '') {
+						alert('Please set category name');
+					} else {
+						$.ajax({
+							url: '/member/favorite/add-category',
+							dataType: "json",
+							type: "post",
+							data: { name: $('#category_name').val() },
+							success: function (result) {
+								//console.log(result.message);
+								if (result.code != 0) {
+									if (result.code == 999) {
+										var msg = result.message + ' <a href="/payment/pay-promotion">Upgrade to VIP</a>';
+									} else {
+										var msg = result.message;
+									}
+									obj2.find('#message').html(msg);
+									return false;
+								}
+								var content = '';
+								var category_data = JSON.parse(JSON.stringify(result.message));
+								content += '<div class="control-group">';
+								content += '<input type="checkbox" id="category' + category_data['id'].id + '" class="category_checkbox" value="' + category_data['id'] + '">&nbsp;&nbsp;';
+								content += '<div class="category_info" style="display: inline">';
+								content += '<label for="category' + category_data['id'] + '" class="category_name">' + category_data['name'] + '</label>&nbsp;';
+								content += '<span class="category_edit" style="cursor: pointer;"><i class="fas fa-edit"></i></span>';
+								content += '</div>';
+								content += '</div>';
+								$('#favorite-modal').find('.modal-body').find('.ck-box-pop').append(content);
+								$('#category_name').val('');
+							}
+						});
+					}
+				});
+
+				$(document).on('click', '.category_edit', function () {
+					$('.category_edit_input').empty();
+					var category_info = $(this).closest('.control-group').find('.category_info');
+
+					var category_name = category_info.find('.category_name').text();
+					var input_column = '<div class="category_edit_input" style="display: inline">';
+					input_column += '<div class="input-group mb-3">';
+					input_column += '<input type="text" class="edit-input form-control" value="' + category_name + '">';
+					input_column += '<div class="input-group-prepend">';
+					input_column += '<button class="btn btn-outline-secondary category_edit_save" type="button"><i class="fas fa-save "></i></button>';
+					input_column += '<button class="btn btn-outline-secondary category_edit_cancel" type="button"><i class="fas fa-window-close"></i></button>';
+					input_column += '</div>';
+					input_column += '</div>';
+					input_column += '</div>';
+
+					$(this).closest('.control-group').append(input_column);
+				});
+
+				$(document).on('click', '.category_edit_save', function () {
+					var category_info = $(this).closest('.control-group').find('.category_info');
+					var category_name = category_info.find('.category_name').text();
+					var category_id = $(this).closest('.control-group').find('.category_checkbox').val();
+					var category_name_new = $(this).closest('.category_edit_input').find('.edit-input').val();
+
+					if (category_name_new == '') {
+						alert('category cannot be empty');
+						return false;
+					}
+					if (category_name != category_name_new) {
+						$.ajax({
+							url: '/member/favorite/edit-category',
+							dataType: "json",
+							type: "post",
+							data: { id: category_id, name: category_name_new },
+							success: function (data) {
+								console.log(data.message);
+								if (data.code == 0) {
+									category_info.find('.category_name').text(category_name_new);
+									$('.category_edit_input').empty();
+								} else {
+									alert(data.message);
+								}
+							}
+						});
+					} else {
+						$('.category_edit_input').empty();
+					}
+				});
+
+				$(document).on('click', '.category_edit_cancel', function () {
+					$('.category_edit_input').empty();
+				});
+
+				$(document).on('click', '.favorite-actor', function () {
+					var vid = $(this).closest('.video-play-content').data('vid');
+					$.ajax({
+						url: '/member/favorite/get-actor',
+						type: "get",
+						data: { id: vid },
+						success: function (result) {
+							if (result.code != 0) {
+								show_note(result.message);
+								return false;
+							}
+							var content = '';
+							if (result.data.length > 0) {
+								var category_data = JSON.parse(JSON.stringify(result.data));
+								content += '<div class="ck-box-pop text-dark">';
+								for (var i = 0; i < category_data.length; i++) {
+									content += '<div class="control-group">';
+									content += '<input type="checkbox" id="actor' + category_data[i].actor + '" class="actor_checkbox" ' + category_data[i].checked + ' value="' + category_data[i].origin + '">&nbsp;&nbsp;';
+									content += '<label for="actor' + category_data[i].actor + '">' + category_data[i].actor + '</label>&nbsp;';
+									content += '</div>';
+								}
+								content += '<div id="message" class="text-danger">&nbsp;</div>';
+								content += '</div>';
+							} else {
+								content = 'No Data';
+							}
+							$('#favorite-modal .modal-title').html(result.title);
+							$('#favorite-modal .modal-body').html(content);
+							$('#favorite-modal .modal-footer').hide();
+							$('#favorite-modal').modal({ show: true });
+						}
+					});
+				});
+
+				$(document).on('click', '.actor_checkbox', function () {
+					var obj1 = $(this).closest('.control-group');
+					var obj2 = $(this).closest('.ck-box-pop');
+					var obj3 = $(this);
+
+					var spinner = '';
+					spinner += '<div class="spinner-border spinner-border-sm text-success" role="status">';
+					spinner += '<span class="sr-only">Process...</span>';
+					spinner += '</div>';
+					obj2.find('#message').html('&nbsp;');
+					obj2.find('.fa-check').remove();
+					obj1.append(spinner);
+
+					if ($(this).prop("checked")) {
+						$.ajax({
+							url: '/member/favorite/add-actor',
+							dataType: "json",
+							type: "post",
+							data: { name: this.value },
+							success: function (result) {
+								obj1.find('.spinner-border').remove();
+								if (result.code != 0) {
+									obj3.prop("checked", false);
+									obj2.find('#message').html(result.message + ' <a href="/payment/pay-promotion">Upgrade to VIP</a>');
+									return false;
+								}
+								obj1.append('<i class="fas fa-check text-success"></i>');
+							}
+						});
+					} else {
+						$.ajax({
+							url: '/member/favorite/del-actor',
+							dataType: "json",
+							type: "post",
+							data: { name: this.value },
+							success: function (result) {
+								obj1.find('.spinner-border').remove();
+								if (result.code != 0) {
+									show_note(result.message);
+									return false;
+								}
+								obj1.append('<i class="fas fa-check text-success"></i>');
+							}
+						});
+					}
+				});
+
+				$(document).on('click', '.exchange-fullhd', function () {
+					var footer = '';
+					switch ($(this).data("level")) {
+						case 1:
+							footer += '<button type="button" class="btn btn-warning" data-value="/payment/pay-promotion">Upgrade VIP</button>';
+							footer += '<button type="button" class="btn btn-secondary" data-value="N">Close</button>';
+							break;
+						case 2:
+							footer += '<button type="button" class="btn btn-secondary" data-value="N">Close</button>';
+							break;
+						default:
+							footer += '<button type="button" class="btn btn-warning" data-value="/login">Login</button>';
+							footer += '<button type="button" class="btn btn-success" data-value="/signup">Signup</button>';
+							break;
+					}
+					$('#common-modal .modal-header .modal-title').html($(this).data("title"));
+					$('#common-modal .modal-body').html($(this).data("msg"));
+					$('#common-modal .modal-footer').html(footer);
+					$('#common-modal').modal('show');
+				});
+
+				function show_note(message) {
+					var footer = '';
+					footer += '<button type="button" class="btn btn-warning" data-value="/login">Login</button>';
+					footer += '<button type="button" class="btn btn-success" data-value="/signup">Signup</button>';
+					//footer += '<button type="button" class="btn btn-secondary" data-value="N">Close</button>';
+					$('#common-modal .modal-header .modal-title').html('NOTE');
+					$('#common-modal .modal-body').html(message);
+					$('#common-modal .modal-footer').html(footer);
+					$('#common-modal').modal('show');
+				}
+
+				$(document).on('click', '#common-modal .modal-footer .btn', function () {
+					if ($(this).data("value") == 'N') {
+						$('#common-modal').modal('hide');
+					} else {
+						window.location.href = $(this).data("value");
+					}
+				});
+			});
+		});</script>
+
+</body>
+
+</html>
