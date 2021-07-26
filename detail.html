@@ -1142,10 +1142,10 @@
 				<div class="row">
 					<div class="col-12 col-md-6 text-center mt-2 p-0 m-0" style="white-space: nowrap;">
 						<button type="button"
-							class="btn btn-outline-light favorite-video mb-1 btn_f_hd Film-footer-Button" id="unlogin_collect"><i
-								class="fas fa-heart pr-1" style="color:red"></i>รายการโปรด</button>
+							class="btn btn-outline-light favorite-video mb-1 btn_f_hd Film-footer-Button" data-toggle="modal" data-target="#unlogin_collect"><i
+								class="fas fa-heart pr-1" style="color:red"></i>รายการโปรด</button>	
 						<button type="button"
-							class="btn btn-outline-light mx-1 favorite-actor mb-1 btn_f_hd Film-footer-Button"> <img
+							class="btn btn-outline-light mx-1 favorite-actor mb-1 btn_f_hd Film-footer-Button" data-toggle="modal" data-target="#unAv_collect"> <img
 								class="p-0 m-0" src="static/picture/icon_01.png" alt="" style="height: 18px;">
 							นักแสดงโปรด </button>
 						<button type="button"
@@ -1782,10 +1782,6 @@
 											</div>
 											<div class="card-text col text-truncate" style="color:#636161">คลิปXบ้านๆ
 											</div>
-
-
-
-
 										</div>
 									</div>
 								</div>
@@ -2258,10 +2254,6 @@
 											</div>
 											<div class="card-text col text-truncate" style="color:#636161">มือสมัครเล่น
 											</div>
-
-
-
-
 										</div>
 									</div>
 								</div>
@@ -2330,29 +2322,78 @@
 		</div>
 	</div>
 
-	<div class="modal fade " id="viponly" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+	 <!-- 未登录收藏弹窗 -->
+	<div class="modal fade " id="unlogin_collect" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
 		aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered modal-sm" role="document">
 			<div class="modal-content">
 				<div class="modal-header" style="background: #2ec4b6;font-weight: bold;font-size: 20px;">
 					<h5 class="modal-title" id="exampleModalCenterTitle">NOTE</h5>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
+						<span aria-hidden="true" style="color:#fff">&times;</span>
 					</button>
 				</div>
 				<div class="modal-body" style="color:#000">
-					หนังเรื่องนี้เฉพาะVIP
+					โปรดเข้าสู่ระบบเพื่อดำเนินการต่อ
 				</div>
 				<div class="modal-footer">
 					<a href="login.html"><button type="button" class="btn btn-warning">Login</button></a> <a
-						href="pay-promotion.html">
-						<button type="button" class="btn btn-success">Buy Vip</button>
+						href="signup.html">
+						<button type="button" class="btn btn-success
+						">Signup</button>
 					</a>
 				</div>
 			</div>
 		</div>
 	</div>
-
+	 <!-- 未登录收藏弹窗结束 -->
+	<!-- 未登录女优收藏 开始-->
+	<div class="modal fade " id="unAv_collect" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+			<div class="modal-content">
+				<div class="modal-header" style="background: #2ec4b6;font-weight: bold;font-size: 20px;">
+					<h5 class="modal-title" id="exampleModalCenterTitle">NOTE</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true" style="color:#fff">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body" style="color:#000">
+					โปรดเข้าสู่ระบบเพื่อดำเนินการต่อ
+				</div>
+				<div class="modal-footer">
+					<a href="login.html"><button type="button" class="btn btn-warning">Login</button></a> <a
+						href="signup.html">
+						<button type="button" class="btn btn-success
+						">Signup</button>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 未登录女优收藏结束 -->
+	<div class="modal fade " id="viponly" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+	aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+		<div class="modal-content">
+			<div class="modal-header" style="background: pink;font-weight: bold;font-size: 20px;">
+				<h5 class="modal-title" id="exampleModalCenterTitle">NOTE</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body" style="color:#000">
+				หนังเรื่องนี้เฉพาะVIP
+			</div>
+			<div class="modal-footer">
+				<a href="login.html"><button type="button" class="btn btn-warning">Login</button></a> <a
+					href="pay-promotion.html">
+					<button type="button" class="btn btn-success">Buy Vip</button>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
 	<!-- 暂时注释,以后在打开==未满18周岁警告弹窗 -->
 	<!-- <div id="ageAuthentication-modal" class="fade modal" role="dialog" tabindex="-1" aria-hidden=""
 		data-backdrop="static" aria-labelledby="ageAuthentication-modal-label">
@@ -2391,6 +2432,8 @@
 			</div>
 		</div>
 	</div> -->
+
+	 <!-- 收藏弹窗 -->
 	<div id="favorite-modal" class="fade modal" role="dialog" tabindex="-1" aria-hidden="true"
 		aria-labelledby="favorite-modal-label">
 		<div class="modal-dialog modal-dialog-centered" role="document">
@@ -2415,6 +2458,7 @@
 			</div>
 		</div>
 	</div>
+
 	<div id="common-modal" class="fade modal" role="dialog" tabindex="-1" aria-hidden="true"
 		aria-labelledby="common-modal-label">
 		<div class="modal-dialog modal-sm modal-dialog-centered" role="document">
@@ -2448,51 +2492,7 @@
 		</div>
 	</div>
 
-	<!-- 未登录时点击收藏按钮的弹窗的html -->
-	<div class="mengchen">
-		<div class="window_box">
-			<div class="window_note">
-				<span>NOTE</span>
-				<span id="window_close">x</span>
-			</div>
-			<div class="window_text">โปรดเข้าสู่ระบบเพื่อดำเนินการต่อ</div>
-			<div class="window_xian"></div>
-			<div class="window_bottom">
-				<button>Login</button>
-				<button>Signup</button>
-			</div>
-		</div>
-	</div>
-	
-	<!-- 已登录时点击收藏按钮的弹窗的html -->
-	<div class="mengchen02">
-		<div class="window_box">
-			<div class="window_note">
-				<span>หนังโปรด</span>
-				<button>save</button>
-			</div>
-			<div class="window_favor">
-				<input type="checkbox" value="markcheckbox1" id="markcheckbox1">
-				<label class="mark" for="markcheckbox1">Favorites</label>
-			</div>
-			<div class="window_upgrade">สมาชิกทั่วไปไม่สามารถสร้างเพลย์ลิสต์ได้ กรุณาอัพเกรดเป็นสมาชิก VIP Upgrade to VIP</div>
-		</div>
-	</div>
-	<!-- 已登录时点击升级为Full HD按钮的弹窗html -->
-	<div class="mengchen01">
-		<div class="window_box">
-			<div class="window_note">
-				<span>เปลี่ยนเป็น Full HD</span>
-				<span id="window_close01">x</span>
-			</div>
-			<div class="window_text">โปรดอัพเกรด VIP</div>
-			<div class="window_xian"></div>
-			<div class="window_bottom">
-				<button id="window_big">Upgrade VIP</button>
-				<button>Close</button>
-			</div>
-		</div>
-	</div>
+
 	<script data-cfasync="false" src="static/js/email-decode.min.js"></script>
 	<script src="static/js/jquery.js"></script>
 	<script src="static/js/yii.js"></script>
