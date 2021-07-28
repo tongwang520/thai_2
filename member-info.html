@@ -3,7 +3,7 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script>(function (w, d, s, l, i) {
 			w[l] = w[l] || []; w[l].push({
 				'gtm.start':
@@ -11,9 +11,11 @@
 			}); var f = d.getElementsByTagName(s)[0],
 				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
 					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-		})(window, document, 'script', 'dataLayer', 'GTM-P68MGRZ');</script>
+		})(window, document, 'script', 'dataLayer', 'GTM-P68MGRZ');
+		
+	</script>
 
-	<title></title>
+	<title>会员中心</title>
 	<link href="static/css/bootstrap.css" rel="stylesheet">
 	<link href="static/css/all.min.css" rel="stylesheet">
 	<link href="static/css/site.css" rel="stylesheet">
@@ -30,7 +32,6 @@
 </head>
 
 <body class="d-flex flex-column h-100">
-
 	<main role="main" data-nosnippet="">
 		<style>
 			.bg {
@@ -138,7 +139,7 @@
 		<div class="member-info-index">
 			<div class="topbox"></div>
 
-			<div class="container mt-3" style="z-insex:3;min;min-height: 82vh;">
+			<div class="container mt-3" style="z-index:3;min-height: 82vh;">
 				<div class="row">
 					<div class="col-lg-3 col-md-12">
 						<ul class="nav mobwidth" id="myTab" role="tablist">
@@ -254,7 +255,9 @@
 	<script src="static/js/yii.js"></script>
 	<script src="static/js/bootstrap.bundle.js"></script>
 	<script src="static/js/lozad.min.js"></script>
+	<script src="static/js/headroom.js"></script>
 	<script src="static/js/custom_cookie.js"></script>
+	
 	<script>jQuery(function ($) {
 			$(document).ready(function () {
 				$("#update-password").submit(function (event) {
