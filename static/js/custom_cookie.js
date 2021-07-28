@@ -1,4 +1,4 @@
-var i=1;
+
 function setCookie(name, value, expire_hours) {
   
   var d = new Date();
@@ -9,7 +9,7 @@ function setCookie(name, value, expire_hours) {
   d.setTime(d.getTime() + expire_hours * 60 * 60 * 1000);
   document.cookie =
     name + "=" + escape(value) + "; expires=" + d.toGMTString() + "; path=/";
-    alert(i++)
+   
 }
 function getCookie(name) {
   var arg = escape(name) + "=";
