@@ -13,8 +13,6 @@
     <link rel="manifest" href="https://www.aoxx69.net/assets/6e027695/manifest.json">
 
 
-
-
     <script>
         (function (w, d, s, l, i) {
             w[l] = w[l] || [];
@@ -684,83 +682,251 @@
             background-color: #000000;
             color: #fff;
         }
-        #coll_list div{
+
+        #coll_list div {
             height: 180px;
-            text-align: center;  
+            text-align: center;
             margin-bottom: 10px;
         }
-        #coll_list div img{
+
+        #coll_list div img {
             width: 95%;
             height: 80%;
             border-radius: 10px 10px 0 0;
         }
-        #coll_list div p{
+
+        #coll_list div p {
             margin-top: 5px;
             padding: 0 10px;
         }
-        #v-pills-messages div{
+
+        #v-pills-messages div {
             text-align: center;
-            
+
         }
-        #v-pills-messages div img{
+
+        #v-pills-messages div img {
             height: 80px;
-            width: 80px;border-radius: 50%;
+            width: 80px;
+            border-radius: 50%;
         }
-        #v-pills-messages div p{
-            padding: 0 10px;  
+
+        #v-pills-messages div p {
+            padding: 0 10px;
             margin-bottom: 0;
-            font-size: 12px; 
+            font-size: 12px;
         }
-        #v-pills-messages div span{
-            color:#2EC4B6;
-            font-size: 12px; 
+
+        #v-pills-messages div span {
+            color: #2EC4B6;
+            font-size: 12px;
         }
-        .cover_av{
+
+        .cover_av {
             height: 80px;
             width: 80px;
             margin: 0 auto;
             position: relative;
         }
-        .icon-close{
-            width: 20px;height: 20px;border-radius: 50%;background-color: #2EC4B6;
-            position: absolute;right: -14%;top: -15%;display: block;
+
+        .icon-close {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #2EC4B6;
+            position: absolute;
+            right: -14%;
+            top: -15%;
+            display: block;
             background: url("./static/image/X.png") no-repeat;
             background-size: 20px 20px;
-            font-style:normal
+            font-style: normal
         }
-    
+      
+            .bg {
+                width: 100%;
+                height: 100%;
+                position: fixed;
+                left: 0;
+                right: 0;
+                z-index: 1;
+                display: block;
+                background-image: url("//rs.aoxx69.net/image/member/sexbaby01.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: top;
+                filter: blur(10px);
+                opacity: 0.6;
+            }
+
+            .member_set_text {
+                color: #cacaca;
+                color: #cacaca;
+                padding: 4px 16px;
+            }
+
+            .member_set_text:hover {
+                color: #fff;
+            }
+
+            .member_set_text.active {
+                color: #fff;
+                background-color:#2EC4B6;
+                border-radius: 5px;
+            }
+
+            .member_detail_text {
+                color: #cacaca;
+                font-size: 14px;
+            }
+
+            .member_info_text {
+                color: #fff;
+                font-size: 14px;
+            }
+
+            .mobwidth {
+                display: inline;
+
+            }
+
+            @media(max-width:992px) {
+                .mobwidth {
+                    display: block;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    overflow: auto;
+                }
+
+                .mobli {
+                    list-style: none;
+                    display: inline-block;
+                }
+
+                .member_set_text.active {
+                    color: #fff;
+                    background-color: #212121;
+                    border-radius: 0px;
+                    border-bottom: solid 1.6px #f1d827;
+                    margin-bottom: 4px;
+                }
+            }
+
+            .img_txt {
+                display: inline-block;
+                white-space: nowrap;
+                width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .poppic_f {
+                position: relative;
+                /* z-index: 2; */
+                /* display: block; */
+                padding-bottom: 10px;
+                height: 236px;
+                inline-size: -webkit-fill-available;
+                object-fit: cover;
+                /* background: center;*/
+            }
+
+            @media(max-width:1366px) {
+                .poppic_f {
+                    position: relative;
+                    /* z-index: 2; */
+                    display: block;
+                    padding-bottom: 10px;
+                    height: 238px;
+                    inline-size: -webkit-fill-available;
+                    object-fit: cover;
+                    /* background: center;*/
+                }
+            }
+
+            .f_ditel {
+                padding-top: 67%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            .topbox {
+                height: 74px;
+                width: 100%;
+            }
+
+            .lock_icon {
+                z-index: 2;
+                position: absolute;
+                right: 41%;
+                top: 23%;
+            }
+
+            .act_lock_icon {
+                z-index: 2;
+                position: absolute;
+                right: 35%;
+                top: 13%;
+            }
+
+            @media(max-width:375px) {
+                .lock_icon {
+                    z-index: 2;
+                    position: absolute;
+                    right: 35%;
+                    top: 10%;
+                }
+
+                .act_lock_icon {
+                    z-index: 2;
+                    position: absolute;
+                    right: 22%;
+                    top: 13%;
+                }
+            }
+           .cover_av img{
+               width: 80px;height: 80px;border-radius: 50%;
+           }
+        
     </style>
     <!-- 主体 -->
     <main role="main" data-nosnippet="">
+       
         <div class="topbox"></div>
-        <div class="container">
+        <div class="container-fluid" style="z-insex:3;min-height: 86vh;">
             <div class="row">
-                <div class="col-sm-3">
-                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home"
-                            role="tab" aria-controls="v-pills-home" aria-selected="true">
-                            <img class="p-0 m-0 pr-1" src="./static/image/collect.png" alt=""style="height: 18px;">รายการโปรด
-                        </a>
-                        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile"
-                            role="tab" aria-controls="v-pills-profile" aria-selected="false">
-                            <img class="p-0 m-0 pr-1" src="./static/image/history-icon.png" alt=""style="height: 18px;">ประวัติ
-                        </a>
-                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages"
-                            role="tab" aria-controls="v-pills-messages" aria-selected="false">
-                            <img class="p-0 m-0 pr-1" src="./static/image/girl.png" alt=""
-                                style="height: 18px;">นักแสดงของฉัน
-                        </a>
-
+                <div class="col-lg-2 col-md-12 mt-4" style="background-color: #212121;">
+                    <div class="rightside_f d-flex align-items-center">
+                        <a class="fas fa-angle-right pl-1"
+                            style="font-size: xx-large;text-decoration:none;color:#ffd728" href=""></a>
                     </div>
+                    <ul class="nav mobwidth" id="myTab" role="tablist" style="white-space: nowrap;overflow-y: hidden;">
+                        <li class="nav-item mt-2 mobli"><a class="ellipsis_member nav-link member_set_text active"
+                                name="home1" id="home-tab" data-toggle="tab" href="#home1" role="tab"
+                                aria-controls="home1" aria-selected="true">
+                                <img src="./static/image/collect.png" alt="" style="width:20px">
+                                收藏</a></li>
+                        <li class="nav-item mt-2 mobli"><a class="ellipsis_member nav-link member_set_text "
+                                name="home2" id="home-tab" data-toggle="tab" href="#home2" role="tab"
+                                aria-controls="home2" aria-selected="true">
+                                <img class="p-0 m-0 pr-1" src="./static/image/history-icon.png" alt="" style="width:20px">
+                                歷史記錄</a></li>
+                        <li class="nav-item mt-2 mobli"><a class="ellipsis_member nav-link member_set_text"
+                                name="homeact" id="home-tab" data-toggle="tab" href="#homeact" role="tab"
+                                aria-controls="homeact" aria-selected="true"> 
+                                 <img class="p-0 m-0 pr-1" src="./static/image/girl.png" alt="" style="width:20px" >我的女僕</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-sm-9" style="min-height: 100vh;background-color: #000000;">
+                <div class="col-lg-10 col-md-12" style="min-height: 100vh;background-color: #000000;text-align: center;">
                     <div class="tab-content" id="v-pills-tabContent">
-                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                        <div class="tab-pane fade show active" id="home1" role="tabpanel"
                             aria-labelledby="v-pills-home-tab">
                             <h2 class="text-center my-2 fa_title">
                                 <img class="p-0 m-0 pr-1" src="./static/image/collect.png" alt=""
                                 style="height: 24px;">
-                                รายการโปรด</h2>
+                                收藏</h2>
                             <div class="row" style="padding-top: 20px;" id="coll_list">
                                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 p-0">
                                     <img src="./static/picture/test.jpg" alt="">
@@ -776,12 +942,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                        <div class="tab-pane fade" id="home2" role="tabpanel"
                             aria-labelledby="v-pills-profile-tab">
                             <h2 class="text-center my-2 fa_title">
                                 <img class="p-0 m-0 pr-1" src="./static/image/history-icon.png" alt=""
                                 style="height: 24px;">
-                                ประวัติ</h2>
+                                歷史記錄</h2>
                                     <div class="row" style="padding-top: 20px;" id="coll_list">
                                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 p-0">
                                             <img src="./static/image/page04-BG.jpg" alt="">
@@ -797,11 +963,11 @@
                                         </div>
                                     </div>
                         </div>
-                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                        <div class="tab-pane fade" id="homeact" role="tabpanel"
                             aria-labelledby="v-pills-messages-tab">
                             <h2 class="text-center my-2 fa_title"> 
                                 <img class="p-0 m-0 pr-1" src="./static/image/girl.png" alt=""
-                                style="height: 24px;">นักแสดงของฉัน</h2>
+                                style="height: 24px;">我的女僕</h2>
                                     <div class="row" style="padding-top: 20px" >
                                         <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6 p-0" style="height: 160px;">
                                              <div class="cover_av">
@@ -853,13 +1019,14 @@
                                         </div>
                                     </div>
                         </div>
-
+            
                     </div>
                 </div>
             </div>
         </div>
 
     </main>
+    
     <!-- 主体end -->
     <div class="bottom_footer my-0 mt-4" id="" style="">
         <div class="bottomleft">
@@ -1205,7 +1372,7 @@
                             if (result.data.length > 0) {
                                 // console.log('xx');
                                 var promotion_data = JSON.parse(JSON.stringify(result
-                                .data));
+                                    .data));
                                 content += '<div>';
                                 for (var i = 0; i < promotion_data.length; i++) {
                                     content += '<div class="control-group">';
@@ -1553,9 +1720,9 @@
                         success: function (result) {
                             obj2.fadeTo("slow", 0.01, function () { //fade
                                 obj2.slideUp("slow",
-                            function () { //slide up
-                                    obj2.remove();
-                                });
+                                    function () { //slide up
+                                        obj2.remove();
+                                    });
                             });
                         }
                     });
@@ -1574,9 +1741,9 @@
                         success: function (result) {
                             obj2.fadeTo("slow", 0.01, function () { //fade
                                 obj2.slideUp("slow",
-                            function () { //slide up
-                                    obj2.remove();
-                                });
+                                    function () { //slide up
+                                        obj2.remove();
+                                    });
                             });
                         }
                     });
@@ -1638,7 +1805,7 @@
                 $(document).on('click', '.category_edit', function () {
                     $('.category_edit_input').empty();
                     var category_info = $(this).closest('.control-group').find(
-                    '.category_info');
+                        '.category_info');
 
                     var category_name = category_info.find('.category_name').text();
                     var input_column =
@@ -1661,7 +1828,7 @@
 
                 $(document).on('click', '.category_edit_save', function () {
                     var category_info = $(this).closest('.control-group').find(
-                    '.category_info');
+                        '.category_info');
                     var category_name = category_info.find('.category_name').text();
                     var category_id = $(this).closest('.control-group').find(
                         '.category_checkbox').val();
@@ -1775,7 +1942,7 @@
                                     obj3.prop("checked", false);
                                     obj2.find('#message').html(result.message +
                                         ' <a href="/payment/pay-promotion">Upgrade to VIP</a>'
-                                        );
+                                    );
                                     return false;
                                 }
                                 obj1.append(

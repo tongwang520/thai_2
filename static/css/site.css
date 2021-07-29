@@ -1187,7 +1187,7 @@ a.desc:after {
   float: right;
   margin-top: 0px;
   /* margin-right: 10px; */
-  background-color: #FFBDCD;
+  background-color: #FFFFFF;
   border-radius: 50%;
   text-align: center;
   line-height: 30px;
@@ -1223,14 +1223,14 @@ a.desc:after {
   float: right;
   margin-top: 0px;
   /* margin-right: 10px; */
-  background-color: #FFBDCD;
+  background-color: #FFFFFF;
   border-radius: 50%;
   text-align: center;
   line-height: 30px;
   color: #d10000;
 }
 .love:hover{
-  color: #ff0000;
+  color: #83DDD5;
   font-weight: bold;
 }
 .mlove{
@@ -1238,7 +1238,7 @@ a.desc:after {
   position: relative;
   width: 50px;
   height: 50px;
-  background-color: #FFBDCD;
+  background-color: #83DDD5;
   border-radius: 50%;
   text-align: center;
   line-height: 30px;
