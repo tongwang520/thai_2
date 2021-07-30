@@ -514,9 +514,9 @@ var elem = document.getElementById( "Header_example" )
 <p class="help-block help-block-error"></p>
 </div>
 <div class="form-group GTM-signup ">
-<button type="submit" class="btn btn-success btn-lg btn-block btn-sm login_btn GTM-signup" name="signup-button">สมัครสมาชิก</button> </div>
+<button type="submit" class="btn btn-success btn-lg btn-block btn-sm login_btn GTM-signup" name="signup-button">會員注冊</button> </div>
 <div class="text-secondary text-center">
-มีบัญชีอยู่แล้ว?<a href="login.html" class="pl-1" rel="nofollow">ล็อคอิน</a>
+มีบัญชีอยู่แล้ว?<a href="login.html" class="pl-1" rel="nofollow">登入</a>
 </div>
 <div class="sexyImg">
 <img src="static/picture/sexbaby01.jpg">
@@ -664,7 +664,7 @@ var elem = document.getElementById( "Header_example" )
 <script src="static/js/lozad.min.js"></script>
 <script src="static/js/custom_cookie.js"></script>
 <script>jQuery(function ($) {
-jQuery('#form-signup').yiiActiveForm([{"id":"memberbindemail-email","name":"email","container":".field-memberbindemail-email","input":"#memberbindemail-email","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.string(value, messages, {"message":"Emailต้องเป็นตัวอักขระเท่านั้น","max":255,"tooLong":"Emailควรประกอบด้วยอักขระอย่างมาก 255 อักขระ","skipOnEmpty":1});}},{"id":"memberbindemail-password","name":"password","container":".field-memberbindemail-password","input":"#memberbindemail-password","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"รหัสผ่านต้องไม่ว่างเปล่า"});yii.validation.string(value, messages, {"message":"รหัสผ่านต้องเป็นตัวอักขระเท่านั้น","min":6,"tooShort":"รหัสผ่านควรประกอบด้วยอักขระอย่างน้อย 6 อักขระ","max":15,"tooLong":"รหัสผ่านควรประกอบด้วยอักขระอย่างมาก 15 อักขระ","skipOnEmpty":1});}}], []);
+jQuery('#form-signup').yiiActiveForm([{"id":"memberbindemail-email","name":"email","container":".field-memberbindemail-email","input":"#memberbindemail-email","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.string(value, messages, {"message":"Emailต้องเป็นตัวอักขระเท่านั้น","max":255,"tooLong":"Emailควรประกอบด้วยอักขระอย่างมาก 255 อักขระ","skipOnEmpty":1});}},{"id":"memberbindemail-password","name":"password","container":".field-memberbindemail-password","input":"#memberbindemail-password","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"密碼 cannot be blank."});yii.validation.string(value, messages, {"message":"รหัสผ่านต้องเป็นตัวอักขระเท่านั้น","min":6,"tooShort":"密碼 should contain at least 6 characters.","max":15,"tooLong":"รหัสผ่านควรประกอบด้วยอักขระอย่างมาก 15 อักขระ","skipOnEmpty":1});}}], []);
   $(document).ready(function(){
     
     $('.btn_right').on('click',function () {
