@@ -40,11 +40,12 @@
 		<div>
 			<div class="container-fluid">
 			<!-- 顶部开始 -->
-				<div class="row" style="background-color: #2EC4B6;">
+				<div class="row" style="background-color: #2EC4B6;line-height: 45px;">
 					<div class="col-4 d-flex justify-content-start align-items-center">
 						<!-- 小屏显示左 -->
 						<div class="d-xs-block d-sm-block d-lg-none">
-							<i class="fas fa-bars" style="font-size:27px;" onclick="openhbNav()"></i>
+							<!-- <i class="fas fa-bars" style="font-size:27px;" onclick="openhbNav()"></i> -->
+							<img src="./static/picture/menu.png" alt="" style="width: 25px;" onclick="openhbNav()">
 						</div>
 	                    <!-- 大屏显示左 -->
 						<div class="d-none d-lg-block">
@@ -165,6 +166,10 @@
 						<div class="d-xs-block d-sm-block d-lg-none p-0 m-0"><a class="p-0 m-0" href="login.html"
 							style="color:#fff"><i class="far fa-user mt-1 mr-2" style="font-size: 1.4rem;"></i></a>
 						</div>
+							<!-- 登录之后user图标 -->
+							<!-- <div class="d-xs-block d-sm-block d-lg-none p-0 m-0">
+								<div class="p-0 m-0" style="color:#fff;cursor:pointer" onclick="openNav()"><div class="login_g">
+							</div><i class="fa fa-user mt-1 mr-2" style="font-size: 1.7rem;"></i></div></div> -->
 						<!-- 搜索图标 -->
 						<a class=" pr-2" href="search.html">
 							<i class="fas fa-search" style="font-size:22px;color:#fff;padding-top: 3px;"></i>
@@ -190,27 +195,27 @@
 						<span class="gift_show pr-2 d-none">
 							<div class="gift_info blink"></div><i class="fas fa-gift GTM-gift_member"
 								style="font-size: 1.4rem;margin-top: 6px;"></i>
-						</span> <a href="/pay-promotion.html" class="member d-none d-lg-block"
+						</span> <a href="./pay-promotion.html" class="member d-none d-lg-block"
 							style="background-color: #f8f9fa;border: 1px solid #2EC4B6;">
 							<i class="fas fa-crown" style="color:#FCC12D;"></i>
 						</a>
-						<a href="/pay-promotion.html" class=" d-none d-lg-block" style="color:#fff"><span
+						<a href="./pay-promotion.html" class=" d-none d-lg-block" style="color:#fff"><span
 								class="px-2"> VIP </span></a>
-						<a href="/member-info.html" class="member d-none d-lg-block"
+						<a href="./member-info.html" class="member d-none d-lg-block"
 							style="background-color: #f8f9fa;border: 1px solid #2EC4B6;">
 							<i class="fas fa-user-alt" style="color:#2EC4B6"></i>
 						</a>
-						<a href="/member-info.html" class="d-none d-lg-block" style="color:#fff"><span class="mx-1"
-								style="white-space: nowrap;">สมาชิก</span></a>
-						<a href="/favorite.html" class="love d-none d-lg-block"
+						<a href="./member-info.html" class="d-none d-lg-block" style="color:#fff"><span class="mx-1"
+								style="white-space: nowrap;">会员</span></a>
+						<a href="./favorite.html" class="love d-none d-lg-block"
 							style="background-color: #f8f9fa;border: 1px solid #2EC4B6;">
 							<i class="fas fa-heart"></i>
 						</a>
-						<a href="/favorite.html" class="d-none d-lg-block" style="color:#fff"><span class="mx-1"
-								style="white-space: nowrap;">รายการโปรด</span></a>
+						<a href="./favorite.html" class="d-none d-lg-block" style="color:#fff"><span class="mx-1"
+								style="white-space: nowrap;">收藏</span></a>
 						<a href="#" class="web-logout-btn logout d-none d-lg-block logout"
 							style="border: 3px solid #2EC4B6;background-color: #ffffff;color:#2EC4B6;">
-							<p class="p-0 m-0">Logout</p>
+							<p class="p-0 m-0">退出</p>
 						</a>
 						<div class="d-xs-block d-sm-block d-lg-none p-0 m-0">
 							<div class="p-0 m-0" style="color:#fff;cursor:pointer" onclick="openNav()">
@@ -224,19 +229,19 @@
 									<spna class="pl-2 ellipsis_member " style="color:#fff;font-size: 18px;">Cookie HQGE
 									</spna>
 								</i></a>
-							<p class="pl-4 m-0 p-0 nav_text">ข้อมูลของฉัน</p><a class="pl-4 mt-2"
+							<p class="pl-4 m-0 p-0 nav_text">我的帳戶</p><a class="pl-4 mt-2"
 								href="member-info.html" style="text-align: initial;"><i
-									class="fas fa-male pr-1"></i>สมาชิก</a><a class="pl-4 mt-2" href="favorite.html"
+									class="fas fa-male pr-1"></i>會員</a><a class="pl-4 mt-2" href="favorite.html"
 								style="text-align: initial;"><i class="fas fa-heart pr-1"
-									style="font-size: 20px;"></i>รายการโปรด</a><a class="pl-4 mt-2"
+									style="font-size: 20px;"></i>收藏</a><a class="pl-4 mt-2"
 								href="favorite.html" style="text-align: initial;"><i
-									class="fas fa-history pr-1"></i>ประวัติ</a>
-							<p class="pl-4 mt-2 m-0 p-0 nav_text">แพ็กเกจแนะนำ</p><a class="pl-4 mt-2"
-								href="pay-promotion.html" style="color:#ff5983;"><i
-									class="fas fa-crown pr-1"></i>อัพเกรด VIP</a>
+									class="fas fa-history pr-1"></i>歷史記錄</a>
+							<p class="pl-4 mt-2 m-0 p-0 nav_text">推薦方案</p><a class="pl-4 mt-2"
+								href="pay-promotion.html" style="color:#FCC12D;"><i
+									class="fas fa-crown pr-1"></i>升级vip</a>
 							<p class="d-flex justify-content-center mt-3"><button type="button"
 									class="btn btn-secondary logout" style="width: 100px;" data-toggle="modal"
-									data-target="#logout-modal">Logout</button></p>
+									data-target="#logout-modal">退出</button></p>
 						</div>
 						<a class=" pr-2" href="/site/search"><i class="fas fa-search"
 								style="font-size:22px;color:#fff;padding-top: 3px;"></i></a>
@@ -265,24 +270,26 @@
 			<div class="container-fluid p-0 d-xs-block d-sm-block d-lg-none">
 				<div class="row">
 					<div class="col-lg">
-						<div class="row" style="background: #83DDD5">
+						<div class="row" style="background: #83DDD5;">
 							<div class="col text-center my-1 headerbtn " data-id="video/video-list" data-alias="jav"
 								style="font-size:1.1rem;cursor: pointer;">
 								<a href="jav.html" style="color:#fff;text-shadow: 2px 1px #9e8989;">
-									<i class="fas fa-video"><span style="white-space: nowrap;">長片</span></i>
+									<img src="./static/picture/long.png" alt="" style="width: 25px;">
+									<span style="white-space: nowrap;">長片</span>
 								</a>
 							</div>
 							<div class="col text-center my-1 headerbtn " data-id="video/s-video-list" data-alias="clips"
 								style="font-size:1.1rem;cursor: pointer;border-left: solid;border-right: solid;">
 								<a href="clips.html" style="color:#fff;text-shadow: 2px 1px #9e8989;">
-									<i class="fab fa-youtube px-1"><span style="white-space: nowrap;">短片</span></i>
+									<img src="./static/picture/short.png" alt="" style="width: 25px;">
+									<span style="white-space: nowrap;">短片</span>
 								</a>
 							</div>
 							<div class="col text-center my-1  headerbtn " data-id="video/animate-list"
 								data-alias="anime" style="font-size:1.1rem;cursor: pointer;">
 								<a href="anime.html" style="color:#fff;text-shadow: 2px 1px #9e8989;">
-									<img src="static/picture/pc_anime.png" style="width:24px;" alt=""><span
-										style="white-space: nowrap;">動畫</span>
+									<img src="static/picture/cortoon.png" style="width:25px;" alt="">
+									<span style="white-space: nowrap;">動畫</span>
 								</a>
 							</div>
 						</div>
@@ -414,82 +421,87 @@
 				style="font-size: 27px;position: absolute;top: 5px;right: 27px;" onclick="closehbNav()"></i>
 			<li class="nav-item active" data-toggle="modal" data-target="#addapp" style="">
 				<a class="GTM-Burger_click nav-link d-flex p-0">
-					<span class="GTM-Burger_click pt-2" style="color:white;font-size: 1.3rem;" onclick="closehbNav()"><i
-							class="fas fa-mobile-alt pr-4 pl-4"></i>Aoxx69 APP</span>
+					<span class="GTM-Burger_click pt-2 pr-3 pl-4" style="color:white;font-size: 1.3rem;" onclick="closehbNav()">
+						<img src="./static/picture/cellphone.png" alt=""  style="width: 20px;">&nbsp;
+						Aoxx69 APP</span>
 				</a>
 			</li>
 			<li class="nav-item active" style="">
-				<a class="GTM-Burger_click nav-link d-flex p-0" href="jav.html"><span class="GTM-Burger_click pt-2"
-						style="color: #ffc107;font-size: 1.3rem;"><i
-							class="fas fa-users pr-3 pl-4"></i>仅限VIP</span></a>
+				<a class="GTM-Burger_click nav-link d-flex p-0" href="jav.html"><span class="GTM-Burger_click pt-2 pr-3 pl-4"
+						style="color: #ffc107;font-size: 1.3rem;">
+						<img src="./static/picture/huangguan.png" alt=""  style="width: 25px;">
+						仅限VIP</span></a>
 			</li>
 			<li class="nav-item active" style="">
-				<a class="GTM-Burger_click nav-link d-flex p-0" href="jav.html"><span class="GTM-Burger_click pt-2"
-						style="color: white;font-size: 1.3rem;"><i class="fas fa-video pr-3 pl-4"></i>泰语字幕</span></a>
+				<a class="GTM-Burger_click nav-link d-flex p-0" href="jav.html"><span class="GTM-Burger_click pt-2 pr-3 pl-4"
+						style="color: white;font-size: 1.3rem;">	
+						<img src="./static/picture/thai.png" alt=""  style="width: 22px;">&nbsp;泰语字幕</span></a>
 			</li>
 			<li class="nav-item active" style="">
 				<a class="GTM-Burger_click nav-link d-flex p-0" href="categories.html"><span
-						class="GTM-Burger_click pt-2" style="color:white;font-size: 1.3rem;"><i
-							class="fas fa-book-open pr-3 pl-4"></i>類別</span></a>
+						class="GTM-Burger_click pt-2 pr-3 pl-4" style="color:white;font-size: 1.3rem;">
+						<img src="./static/picture/cate.png" alt=""  style="width: 25px;">&nbsp;類別</span></a>
 			</li>
 			<li class="nav-item active" style="">
 				<a class="GTM-Burger_click nav-link d-flex p-0" href="actor-list.html"><span
-						class="GTM-Burger_click pt-2" style="color:white;font-size: 1.3rem;"><i
-							class="fas fa-list-ul pr-3 pl-4"></i>女優列表</span></a>
+						class="GTM-Burger_click pt-2 pr-3 pl-4" style="color:white;font-size: 1.3rem;">	
+						<img src="./static/picture/av-list.png" alt=""  style="width: 21px;">&nbsp;女優列表</span></a>
 			</li>
 			<li class="nav-item active" style="">
-				<a class="GTM-Burger_click nav-link d-flex p-0" href="tag.html"><span class="GTM-Burger_click pt-2"
-						style="color:white;font-size: 1.3rem;"><i class="fas fa-gamepad pr-3 pl-4"></i>標籤</span></a>
+				<a class="GTM-Burger_click nav-link d-flex p-0" href="tag.html"><span class="GTM-Burger_click pt-2 pr-3 pl-4"
+						style="color:white;font-size: 1.3rem;">
+						<img src="./static/picture/label.png" alt=""  style="width: 23px;">
+							標籤</span></a>
 			</li>
 			<li class="nav-item active" style="">
-				<a class="GTM-Burger_click nav-link d-flex p-0" href="popular.html"><span class="GTM-Burger_click pt-2"
-						style="color:white;font-size: 1.3rem;"><i
-							class="fas fa-trophy pr-3 pl-4"></i>排行榜</span></a>
+				<a class="GTM-Burger_click nav-link d-flex p-0" href="popular.html"><span class="GTM-Burger_click pt-2 pr-3 pl-4"
+						style="color:white;font-size: 1.3rem;">
+						<img src="./static/picture/paihang.png" alt=""  style="width: 23px;">&nbsp;排行榜</span></a>
 			</li>
 			<li class="nav-item active" style="">
-				<a class="GTM-Burger_click nav-link d-flex p-0" href="index.html"><span class="GTM-Burger_click pt-2"
-						style="color:white;font-size: 1.3rem;"><i class="fab fa-hotjar pr-3 pl-4"
-							style="color:red;"></i>熱門</span></a>
+				<a class="GTM-Burger_click nav-link d-flex p-0" href="index.html"><span class="GTM-Burger_click pt-2 pr-3 pl-4"
+						style="color:white;font-size: 1.3rem;"><i class="fab fa-hotjar
+							style="color:red;"></i>&nbsp;熱門</span></a>
 			</li>
 			<div style="border-bottom: 1.2px #2EC4B6 solid;margin-top: 10px;"></div>
 			<li class="nav-item active" style="">
 				<a class="GTM-Burger_click nav-link d-flex p-0" href="javascript:;" rel="nofollow noopener"
-					target="_blank"><span class="GTM-Burger_click pt-2" style="color:white;font-size: 1.3rem;"><i
-							class="fas fa-book-reader pr-3 pl-4"></i>女優介紹
+					target="_blank"><span class="GTM-Burger_click pt-2 pr-3 pl-4" style="color:white;font-size: 1.3rem;">
+						<img src="./static/picture/gtm.png" alt=""  style="width: 22px;">&nbsp;女優介紹
 					</span></a>
 			</li>
 			<li class="nav-item active" style="">
 				<a class="GTM-Burger_click nav-link d-flex p-0" href="javascript:;" rel="nofollow noopener"
-					target="_blank"><span class="GTM-Burger_click pt-2" style="color:white;font-size: 1.3rem;"><i
-							class="fas fa-book-reader pr-3 pl-4"></i>AV_STORY</span></a>
+					target="_blank"><span class="GTM-Burger_click pt-2 pr-3 pl-4" style="color:white;font-size: 1.3rem;">
+						<img src="./static/picture/gtm.png" alt=""  style="width: 22px;">&nbsp;AV_STORY</span></a>
 			</li>
 			<li class="nav-item active" style="">
 				<a class="GTM-Burger_click nav-link d-flex p-0" href="javascript:;" rel="nofollow noopener"
-					target="_blank"><span class="GTM-Burger_click pt-2" style="color:white;font-size: 1.3rem;"><i
-							class="fas fa-book-reader pr-3 pl-4"></i>AV 週報</span></a>
+					target="_blank"><span class="GTM-Burger_click pt-2 pr-3 pl-4" style="color:white;font-size: 1.3rem;">
+						<img src="./static/picture/gtm.png" alt=""  style="width: 22px;">&nbsp;AV 週報</span></a>
 			</li>
 			<div style="border-bottom: 1.2px #2EC4B6 solid;margin-top: 10px;"></div>
 
 			<li class="nav-item active" style="">
 				<a class="GTM-Burger_click nav-link d-flex p-0"
 					href="email-protection.html#4f2e20373779760f3f3d203b2021222e2623612c2022703c3a2d252a2c3b72aff7daaff6c6aff7e2aff7c8aff7ceaff7fdaff7ecaff7daaff7fbaff7dbaff7daaff6c7aff7e2aff7eaaff7c8aff6cdaff7c9aff7e6aff7dcaff7fd6faff6ceaff7e2aff7dbaff6cbaff7eaaff7d6aff6c3aff6cbaff7e2aff7dbaff7fa6f2e23232e23232e23232e23236faff6cbaff7dbaff6c6aff6cfaff7eaaff7edaff7d6aff7ffaff7cbaff7ff692d202b3672aff7daaff6c6aff7e2aff7c8aff7ceaff7fdaff7ecaff7daaff7fbaff7dbaff7daaff6c7aff7e2aff7eaaff7c8aff6cdaff7c9aff7e6aff7dcaff7fd6faff6ceaff7e2aff7dbaff6cbaff7eaaff7d6aff6c3aff6cbaff7e2aff7dbaff7fa6f2e23232e23232e23232e23236faff6cbaff7dbaff6c6aff6cfaff7eaaff7edaff7d6aff7ffaff7cbaff7ff">
-					<span class="GTM-Burger_click pt-2" style="color:white;font-size: 1.3rem;"><i
-							class="fas fa-file-signature pr-3 pl-4"></i>廣告聯繫</span>
+					<span class="GTM-Burger_click pt-2 pr-3 pl-4" style="color:white;font-size: 1.3rem;">
+						<img src="./static/picture/service.png" alt=""  style="width: 22px;">&nbsp;廣告聯繫</span>
 				</a>
 			</li>
 			<li class="nav-item active" style="">
 				<a class="GTM-Burger_click nav-link d-flex p-0"
 					href="email-protection.html#93f2fcebeba5aad3e3e1fce7fcfdfef2faffbdf0fcfeace0e6f1f9f6f0e7ae732b06732b27732b07732b06732a1b732b3e732a13732b30732b21b5f1fcf7eaae732b30732b21732b31732b36732b23732a13732b3e732b26732b31732b07732b11732a1a732b3e732a13732b39732b0a732b3e732a12732b0a732b23b6a3d2dffafdf6b3dad7b3a9f2fffff2fffff2fffff2ffff">
-					<span class="GTM-Burger_click pt-2" style="color:white;font-size: 1.3rem;"><i
-							class="fas fa-envelope pr-3 pl-4"></i>聯繫客服</span>
+					<span class="GTM-Burger_click pt-2 pr-3 pl-4" style="color:white;font-size: 1.3rem;">
+						<img src="./static/picture/phone.png" alt=""  style="width: 23px;">&nbsp;聯繫客服</span>
 				</a>
 			</li>
 			<div style="border-bottom: 1.2px #2EC4B6 solid;margin-top: 10px;">
 
 				<li class="nav-item dropright d-flex align-items-center pl-4" style="list-style:none">
 					<a class="nav-link my-auto p-0 " data-toggle="dropdown" href="index.html#">
-						<i class="flag-icon flag-icon-th" style="font-size:1.4rem;"></i>
-						<span class="pl-1" style="color:#fff;font-size: 1.3rem;">選擇語言</span>
+						<i class="flag-icon flag-icon-th" style="font-size:1.1rem;"></i>
+						<span class="" style="color:#fff;font-size: 1.3rem;">選擇語言</span>
 					</a>
 					<div class="dropdown-menu p-0 L_D">
 						<a href="index.html#" class="dropdown-item active"><i class="flag-icon flag-icon-th mr-2"></i>
@@ -499,9 +511,9 @@
 				</li>
 				<li class="nav-item active" style="">
 					<a class="GTM-Burger_click nav-link d-flex p-0 pl-4" href="javascript:;" rel="nofollow noopener"
-						target="_blank"><span class="GTM-Burger_click pt-2" style="color:white;font-size: 1.3rem;">
-							<img class="pr-2" src="static/picture/tpd-b-24px.png"
-								alt="">เว็บหนังโป๊ที่ดีที่สุด</span></a>
+						target="_blank"><span class="GTM-Burger_click pt-2 " style="color:white;font-size: 1.3rem;">
+							<img class="" src="static/picture/jiangpai.png" style="width:24px"
+								alt="">&nbsp;最佳色網</span></a>
 				</li>
 
 
@@ -512,7 +524,7 @@
 					</a>
 					<a href="javascript:;" rel="nofollow noopener" target="_blank" class="pl-2">
 						<button type="button" class="btn btn-primary GTM-Burger_click"
-							style="background-color: #70abea;"><i class="fab fa-twitter pr-1"></i>Twitter</button>
+							style="background-color: #2FB0EC;"><i class="fab fa-twitter pr-1"></i>Twitter</button>
 					</a>
 				</p>
 			</div>
@@ -639,7 +651,7 @@
 	<script data-cfasync="false" src="static/js/email-decode.min.js"></script>
 	<!-- telegram弹窗开始 -->
 	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-		aria-hidden="true">
+		aria-hidden="true" style="z-index: 99999;">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content" style="background-color:#2ec4b6;">
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -4140,29 +4152,27 @@
 	<div class="bottom_footer my-0 mt-4" id="" style="">
 		<div class="container">
 			<div class="row d-flex justify-content-center">
-				<div class="col-lg-3 col-md-12 d-flex align-items-center justify-content-center mr-0">
+				<div class="col-lg-2 col-md-12 d-flex align-items-center justify-content-center mr-0">
 					<div class="bottomleft">
 						<a href="index.html#"><img src="static/picture/logo2.png" alt="logo"></a>
 					</div>
 				</div>
 				<div class="col-lg-1 d-none d-lg-block">
-					<div style="font-size: 60px;color: white;line-height: 190px;font-weight: 100;">&nbsp;|&nbsp;</div>	
+					<div style="font-size: 40px;color: white;line-height: 170px;font-weight: 100;text-align: center;">&nbsp;|&nbsp;</div>	
 				</div>
-				<div class="col-lg-4  col-md-12 d-flex align-items-center justify-content-center">
+				<div class="col-lg-7  col-md-12 d-flex align-items-center justify-content-center">
 					<div class="bottomright" style="white-space: nowrap;">
-						<p>
-							<a href="javascript:;" style="text-decoration:none;color:white;">Policy</a> |
-							<a href="javascript:;" style="text-decoration:none;color:white;">Termsofservice</a> |
-							<a href="javascript:;" style="text-decoration:none;color:white;">Disclaimer</a> |
-							<a href="javascript:;" style="text-decoration:none;color:white;">about</a> |
-							<a style="text-decoration:none;color:white;"
-								href="email-protection.html#18797760602e2158686a776c777675797174367b7775276b6d7a727d7b6c25f8a09af8a191f8a0b5f8a198f8a0b2f8a081f8a0b5f8a199f8a081f8a0a838f8a198f8a086f8a0aff8a190f8a0b5f8a086f8a0a9f8a08af8a081f8a0aaf8a199f8a0bdf8a0a8f8a083f8a0bbf8a0a9f8a082f8a083f8a0bbf8a0a0f8a09ff8a198f8a0bff8a19ff8a082f8a19cf8a093f8a08df8a1943e7a777c6125f8a0bbf8a0aaf8a0baf8a0bdf8a0a8f8a198f8a0b5f8a0adf8a0baf8a08cf8a09af8a191f8a0b5f8a198f8a0b2f8a081f8a0b5f8a199f8a081f8a0a8">Contact
-								us </a>|
-							<a style="text-decoration:none;color:white;"
-								href="email-protection.html#9afbf5e2e2aca3daeae8f5eef5f4f7fbf3f6b4f9f5f7a5e9eff8f0fff9eea77a22187a23137a22377a231a7a22307a22037a22377a231b7a22037a222aba7a231a7a22047a222d7a23127a22377a22047a222b7a22087a22037a22287a231b7a223f7a222a7a22017a22397a222b7a22007a22017a22397a22227a221d7a231a7a223d7a231d7a22007a231e7a22117a220f7a2316bcf8f5fee3a77a22397a22287a22387a223f7a222a7a231a7a22377a222f7a22387a220e7a22187a23137a22377a231a7a22307a22037a22377a231b7a22037a222a">
-								FAQ
-							</a>
-							<p>Copyright @ 2019 aoxx69.com All Rights Reserved</p>
+						<p class="text-center visible-xs d-flex flex-wrap">
+							<a  href="https://sexyabc.com" target="_blank">1691 sexy girl</a>
+							<a  href="https://sexy668.com" target="_blank">1690 sexy girl</a>
+							<a  href="https://sexy556.com" target="_blank">1689 sexy girl</a>
+							<a  href="https://sexy121.com" target="_blank">166 sexy girl</a>
+							<a  href="https://usdhnfu.com" target="_blank">1688 sexy girl</a>
+							<a  href="https://oisjrgiks.com" target="_blank">sexy girl</a>
+							<a  href="https://oaihdk.com" target="_blank">69 sexy girl</a>
+							<a  href="https://laksjfl.com " target="_blank">777 sexy girl</a>
+						</p>
+							<p>Copyright @ 2019 <a style="color: #2EC4B6;" href="#">aoxx69.com</a> All Rights Reserved</p>
 					</div>
 				</div>
 			</div>

@@ -345,12 +345,12 @@ a.desc:after {
     margin: 0 1px;
 }
 .btn-primary{
- background-color: #FCC12D;
- border-color: #FCC12D;
+ background-color:#007BFF;
+ border-color: #007BFF;
 }
 .btn-primary:hover{
-    background-color: #da9e08;
-    border-color: #da9e08;
+    background-color: #085fbb;
+    border-color: #085fbb;
 }
 .page_content .page-item.active .page-link {
     z-index: 1;
@@ -1028,7 +1028,7 @@ a.desc:after {
   }
   .select_bar.active {
 
-    background-color: #ff8100;
+    background-color: #FCC12D;
     color: white;
     opacity:1;
     padding-bottom: 1px;
@@ -1569,7 +1569,7 @@ a.desc:after {
     padding: 4px 10px;
     border-radius: 16px;
     font-size: 0.8rem;
-    border: 2px solid #f4ab29;
+    border: 2px solid #2EC4B6;
 }
 .hot_tag_hiden{
     height: 32px;
@@ -2296,3 +2296,11 @@ opacity: 0.8 !important;
     background-color: #2EC4B6 !important;
     border-color: #2EC4B6 !important;
     }
+
+    .visible-xs a{
+        color:#6c757d;
+    }
+
+.visible-xs a:hover{
+ color:#ffffff;
+}

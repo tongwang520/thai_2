@@ -692,7 +692,7 @@
         #coll_list div img {
             width: 95%;
             height: 80%;
-            border-radius: 10px 10px 0 0;
+            border-radius: 5px 5px 0 0;
         }
 
         #coll_list div p {
@@ -727,6 +727,7 @@
             width: 80px;
             margin: 0 auto;
             position: relative;
+            cursor: pointer;
         }
 
         .icon-close {
@@ -740,9 +741,23 @@
             display: block;
             background: url("./static/image/X.png") no-repeat;
             background-size: 20px 20px;
-            font-style: normal
+            font-style: normal;
+            cursor: pointer;
         }
-      
+      .icon-cellect-close{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #2EC4B6;
+            position: absolute;    
+            right: 12px;
+            top: 3px;
+            display: block;
+            background: url("./static/image/X.png") no-repeat;
+            background-size: 30px 30px;
+            font-style: normal;
+            cursor: pointer;
+      }
             .bg {
                 width: 100%;
                 height: 100%;
@@ -901,7 +916,7 @@
                         <a class="fas fa-angle-right pl-1"
                             style="font-size: xx-large;text-decoration:none;color:#ffd728" href=""></a>
                     </div>
-                    <ul class="nav mobwidth" id="myTab" role="tablist" style="white-space: nowrap;overflow-y: hidden;">
+                    <ul class="nav mobwidth" id="myTab" role="tablist" style="white-space: nowrap;overflow-y: hidden; cursor: pointer;">
                         <li class="nav-item mt-2 mobli"><a class="ellipsis_member nav-link member_set_text active"
                                 name="home1" id="home-tab" data-toggle="tab" href="#home1" role="tab"
                                 aria-controls="home1" aria-selected="true">
@@ -921,7 +936,7 @@
                 </div>
                 <div class="col-lg-10 col-md-12" style="min-height: 100vh;background-color: #000000;text-align: center;">
                     <div class="tab-content" id="v-pills-tabContent">
-                        <div class="tab-pane fade show active" id="home1" role="tabpanel"
+                        <div class="tab-pane fade show active" style="cursor: pointer;" id="home1" role="tabpanel"
                             aria-labelledby="v-pills-home-tab">
                             <h2 class="text-center my-2 fa_title">
                                 <img class="p-0 m-0 pr-1" src="./static/image/collect.png" alt=""
@@ -929,21 +944,24 @@
                                 收藏</h2>
                             <div class="row" style="padding-top: 20px;" id="coll_list">
                                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 p-0">
+                                    <i class="icon-cellect-close"></i>
                                     <img src="./static/picture/test.jpg" alt="">
                                     <p class="text-truncate">นักแสดงเดี่ยวนักแสดงเดี่ยวนักแสดงเดี่</p>
                                 </div>
                                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 p-0">
+                                    <i class="icon-cellect-close"></i>
                                     <img src="./static/picture/test.jpg" alt="">
                                     <p class="text-truncate p-10">นักแสดงเดี่ยวนักแสดงเดี่ยวนักแสดงเดี่</p>
                                 </div>
                                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 p-0">
+                                    <i class="icon-cellect-close"></i>
                                     <img src="./static/picture/test.jpg" alt="">
                                     <p class="text-truncate p-10">นักแสดงเดี่ยวนักแสดงเดี่ยวนักแสดงเดี่</p>
                                 </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="home2" role="tabpanel"
-                            aria-labelledby="v-pills-profile-tab">
+                            aria-labelledby="v-pills-profile-tab" style="cursor: pointer;">
                             <h2 class="text-center my-2 fa_title">
                                 <img class="p-0 m-0 pr-1" src="./static/image/history-icon.png" alt=""
                                 style="height: 24px;">
@@ -964,7 +982,7 @@
                                     </div>
                         </div>
                         <div class="tab-pane fade" id="homeact" role="tabpanel"
-                            aria-labelledby="v-pills-messages-tab">
+                            aria-labelledby="v-pills-messages-tab" style="cursor: pointer;">
                             <h2 class="text-center my-2 fa_title"> 
                                 <img class="p-0 m-0 pr-1" src="./static/image/girl.png" alt=""
                                 style="height: 24px;">我的女僕</h2>
