@@ -156,7 +156,7 @@
 						</span>
 						<!-- 大屏显示登陆注册button -->
 						<div class="web-login-btn d-none d-lg-block">
-							<p class="m-0 p-0">
+							<p class="m-0 p-0" style="line-height:30px">
 								<a class="GTM-Top-Button" href="login.html">登入</a>
 								<span style="color:#2EC4B6">|</span>
 								<a class="GTM-Top-Button" href="signup.html">会员注册</a>
@@ -4172,7 +4172,7 @@
 							<a  href="https://oaihdk.com" target="_blank">69 sexy girl</a>
 							<a  href="https://laksjfl.com " target="_blank">777 sexy girl</a>
 						</p>
-							<p>Copyright @ 2019 <a style="color: #2EC4B6;" href="#">aoxx69.com</a> All Rights Reserved</p>
+							<p style="line-height: 40px;">Copyright @ 2019 <a style="color: #2EC4B6;" href="#">aoxx69.com</a> All Rights Reserved</p>
 					</div>
 				</div>
 			</div>
@@ -4681,7 +4681,8 @@
 
 				$(document).on('click', '#ageAuthentication-modal .modal-footer .btn', function () {
 					if ($(this).data("value") == 'N') {
-						window.location.href = '//google.com.tw';
+						// window.location.href = '//google.com.tw';
+						$('#ageAuthentication-modal').modal('hide');
 					} else {
 						setCookie('ageAuthentication', true);
 						$('#ageAuthentication-modal').modal('hide');
